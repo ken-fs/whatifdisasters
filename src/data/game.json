@@ -33,7 +33,21 @@
       "summary": "The moon drops toward Earth in stages. The sea first surges in and out, burning chunks fall from the sky, and gravity weakens until loose objects and players start lifting off the ground.",
       "howToGet": "Get indoors before the surge reaches the shoreline and stay under a roof while debris falls. Sitting out the whole scenario in the open is what kills most rounds of this one.",
       "sources": 3,
-      "verified": true
+      "verified": true,
+      "banner": "What if the moon falls?",
+      "stages": [
+        "The sea starts surging in and out along every shoreline — the first visible sign, and the one most players ignore.",
+        "Burning chunks come down out of the sky while that is still happening, so the threat moves from water to overhead debris.",
+        "Gravity weakens. Loose objects and then players start to lift, which turns open ground into a place you cannot stay anchored."
+      ],
+      "killSpots": "The shoreline during the surge and open ground once debris starts falling. Players who survive the water usually die to a chunk they never looked up for.",
+      "prep": [
+        "Get off the beach and out of the low street before the timer ends — the surge is the first stage, not the last.",
+        "Pick cover with a roof: falling chunks are the second stage and they do not care how far inland you are.",
+        "Note anything heavy above you. When gravity weakens, props that were stable become projectiles."
+      ],
+      "ifCaught": "Move inland and under a roof in the same run — stopping to watch the wave from a rooftop puts you back under the debris. If you are already lifting off the ground, get to a wall and stay against it.",
+      "worstMaps": "Coastal Resort and Harbor Port — the surge phase reaches further inland and the low decks offer no roof cover."
     },
     {
       "slug": "sun-disappears",
@@ -44,7 +58,21 @@
       "summary": "A permanent deep freeze sets in while the power grid fails. The map goes dark and cold rather than being torn apart, so the round is lost to exposure in the open rather than to one big hit.",
       "howToGet": "Treat it as a shelter round: find an interior and stay in it for the full timer. Running between buildings to loot is what gets players caught outside when the freeze deepens.",
       "sources": 2,
-      "verified": true
+      "verified": true,
+      "banner": "What if the sun disappears?",
+      "stages": [
+        "The light goes out. The map turns dark enough that you lose track of where the streets run.",
+        "The deep freeze sets in while the power grid fails, so the buildings that looked like shelter stop being lit or powered.",
+        "The cold keeps deepening for the rest of the round rather than hitting once, so exposure is the thing that finishes the round."
+      ],
+      "killSpots": "Anywhere outside. This scenario does not tear the map apart, so the losing move is choosing to keep moving between buildings instead of committing to one.",
+      "prep": [
+        "Pick one interior and get inside it before the banner ends.",
+        "Learn the door you came in through — moving in the dark is where people get lost.",
+        "Do not plan a route that needs street time later in the round. The cold gets worse, not better."
+      ],
+      "ifCaught": "Break line of sight to the open sky and get inside the nearest building, even one you did not plan on. A worse shelter beats a better one you never reach.",
+      "worstMaps": "Any map with long exposed crossings — the Golden Gate crossing has the most unavoidable outdoor distance between covers."
     },
     {
       "slug": "mega-tsunami",
@@ -55,7 +83,21 @@
       "summary": "A wave that grows as it approaches and drags players off the coast. The water arrives later than the warning does, so the 30-second head start is the entire survival window.",
       "howToGet": "Climb first and loot never. Second floors, roofs and hillside ledges are the only ground that stays dry; anything at street level gets swept.",
       "sources": 3,
-      "verified": true
+      "verified": true,
+      "banner": "What if a 500 m mega tsunami hits?",
+      "stages": [
+        "The water pulls back first, which is the only warning you get.",
+        "The wave builds as it approaches, so the height at the shoreline is not the height that arrives.",
+        "It drags players off the coast rather than hitting once — the wash-out is as dangerous as the impact."
+      ],
+      "killSpots": "Street level on every coastal map, and every low roof. The wave grows on approach, so a first-floor rooftop that survives the first seconds may not survive the pass.",
+      "prep": [
+        "Climb immediately — second floor, roof ridge, or hillside ledge above the waterfront.",
+        "Aim inland as well as up: height inland beats height on the shoreline.",
+        "Do not spend the 30 seconds looting the beach. The wave is the round."
+      ],
+      "ifCaught": "Go up anything, even a car roof, and keep climbing if the water reaches you. Being swept is the failure state — you do not recover from it.",
+      "worstMaps": "Coastal Resort and Harbor Port — the low waterfront is most of the playable area."
     },
     {
       "slug": "ocean-rolls-back",
@@ -66,7 +108,21 @@
       "summary": "The sea pulls away from the coast before it comes back. The dry seabed is the bait: the water returns faster than anyone can cross it.",
       "howToGet": "When the shoreline empties, go up instead of out to look. Walking onto the seabed is the mistake this scenario is built around.",
       "sources": 2,
-      "verified": true
+      "verified": true,
+      "banner": "What if the ocean rolls back?",
+      "stages": [
+        "The sea empties out, exposing the seabed. It looks like new ground to explore.",
+        "The water returns faster than a player can cross the distance they just walked.",
+        "Anyone on the seabed when it comes back is beyond rescue — the round is decided there."
+      ],
+      "killSpots": "The exposed seabed. It is the bait of the scenario, and the fastest way to lose a round that otherwise has no hazard at all.",
+      "prep": [
+        "When the shoreline empties, treat it as a warning, not an opening.",
+        "Move inland and up instead of out toward the water.",
+        "Keep other players in view — the temptation to follow someone onto the seabed is how groups get wiped."
+      ],
+      "ifCaught": "Drop everything and run inland; do not try to grab one more thing off the exposed ground. If the water is already returning, climb rather than outrun.",
+      "worstMaps": "Coastal Resort, Harbor Port and the Golden Gate crossing — all three have long shoreline or deck runs."
     },
     {
       "slug": "floor-becomes-lava",
@@ -77,7 +133,21 @@
       "summary": "Touching the ground burns, and the lava keeps rising as the round goes on. Height is the only currency: whatever you are standing on now will be submerged first.",
       "howToGet": "Start moving upward before the first burn tick, and keep switching to the next surface up. Standing still on a roof only works until the level reaches it.",
       "sources": 2,
-      "verified": true
+      "verified": true,
+      "banner": "What if the floor becomes lava?",
+      "stages": [
+        "The ground starts burning on contact — the first tick is a warning, not a death.",
+        "The lava keeps rising, which means every surface has a shelf life.",
+        "The map compresses upward until the highest point is the only place left."
+      ],
+      "killSpots": "Standing still on a surface that already started burning, and re-descending for loot after you climbed.",
+      "prep": [
+        "Map your route upward during the 30 seconds, including a second surface above the first.",
+        "Do not commit to a roof that has no higher step — the rising level takes it.",
+        "Keep moving between surfaces rather than waiting for the burn to reach you."
+      ],
+      "ifCaught": "Take the burn for one step up rather than two steps sideways. Height resets the clock; distance does not.",
+      "worstMaps": "Flat maps are the worst — Suburban Neighborhood has the most ground to lose and the fewest high structures."
     },
     {
       "slug": "zombie-outbreak",
@@ -88,7 +158,21 @@
       "summary": "Zombies smash through doors, players who die get back up infected, and fast red-glowing crawlers join later in the round. The threat is other players turning, not just the first wave.",
       "howToGet": "Keep a door between you and the street, and never stand next to someone who is about to go down - the infected turn fast. Open ground with a group is worse than a closed room alone.",
       "sources": 2,
-      "verified": true
+      "verified": true,
+      "banner": "What if a zombie outbreak happens?",
+      "stages": [
+        "Zombies start breaking through doors instead of waiting outside them.",
+        "Players who die get back up infected, so the crowd turns against itself as the round goes on.",
+        "Fast red-glowing crawlers join later, which is when holding a doorway stops working."
+      ],
+      "killSpots": "Doorways and groups. A door buys time against the first wave and nothing against crawlers, and standing beside someone who is about to turn is how a safe room becomes a death trap.",
+      "prep": [
+        "Pick a room with one entrance and a second way out.",
+        "Keep space from other players instead of clustering at the door.",
+        "Count the crawlers when they appear — that is the signal to abandon the room, not defend it harder."
+      ],
+      "ifCaught": "Leave the room before the crawlers box you in. Running into the street is survivable; being cornered indoors is not.",
+      "worstMaps": "Suburban Neighborhood — enclosed houses with single doors are the trap, and the streets give crawlers room to run."
     },
     {
       "slug": "earth-tilts",
@@ -99,7 +183,21 @@
       "summary": "Walls become floors and the sea drops onto the coasts. Anything that was a vertical surface is now walkable, and everything that was standing falls with the map.",
       "howToGet": "Expect to be thrown: stay away from ledges, glass and anything loose while the tilt happens. Once the world settles, walk the old walls like ordinary ground.",
       "sources": 1,
-      "verified": true
+      "verified": true,
+      "banner": "What if Earth tilts 90°?",
+      "stages": [
+        "The whole map rotates. Walls become floors and everything standing falls with the terrain.",
+        "Sea water drops onto the coasts as the oceans settle into their new orientation.",
+        "What counts as a safe height changes entirely — the old roof may now be a wall."
+      ],
+      "killSpots": "Ledges and glass during the rotation, and anything loose that falls with you. The tilt kills through the fall, not through a hazard chasing you.",
+      "prep": [
+        "Stand away from ledges, windows and stacked props when the timer runs out.",
+        "Expect to be thrown and plan to land on something rather than to stay standing.",
+        "After the world settles, re-read the map — vertical surfaces are ordinary ground now."
+      ],
+      "ifCaught": "Do not fight the fall. Once it stops, walk the new floors instead of trying to reach the old ones.",
+      "worstMaps": "Tall, dense maps — Alpine Ski Resort and Jungle Pyramids both have a lot of vertical structure to fall through."
     },
     {
       "slug": "every-volcano-erupts",
@@ -110,7 +208,21 @@
       "summary": "Lava rocks rain down and the ground splits open. There is no safe shoreline or corner: the damage arrives vertically first, then from below.",
       "howToGet": "Shelter under solid cover beats running into the open, where falling rocks are unavoidable. Avoid standing over cracked ground once the splits start.",
       "sources": 1,
-      "verified": true
+      "verified": true,
+      "banner": "What if every volcano erupts at once?",
+      "stages": [
+        "Lava rocks come down from above first, so the sky is the immediate threat.",
+        "The ground splits open underneath, which removes the ground-level answer.",
+        "Both continue together, so no single position stays safe for the whole round."
+      ],
+      "killSpots": "Open ground under falling rock, and standing over a crack when it opens. Unlike the tsunami, climbing does not fix this one — cover does.",
+      "prep": [
+        "Get under something solid rather than high. This is the scenario where a roof beats a rooftop.",
+        "Avoid cracked ground as soon as it appears; it telegraphs where the splits run.",
+        "Plan one backup cover nearby — the first one gets hit eventually."
+      ],
+      "ifCaught": "Move under cover in short bursts and watch the sky between sprints. Crossing open ground in one run is what gets players hit.",
+      "worstMaps": "Jungle Pyramids and Alpine Ski Resort — open terrain with long sightlines and little roof cover."
     },
     {
       "slug": "f5-tornado",
@@ -121,7 +233,21 @@
       "summary": "The tornado destroys the buildings it passes through, so the map's cover is removed ahead of the damage rather than around it.",
       "howToGet": "Watch the direction it is tracking and stay behind it - a building is only protection until the funnel reaches it. Never cross open ground in front of it.",
       "sources": 2,
-      "verified": true
+      "verified": true,
+      "banner": "What if an F5 tornado hits?",
+      "stages": [
+        "The funnel tracks across the map and destroys the buildings it passes through.",
+        "Cover disappears ahead of the damage rather than around it, so the map changes as the tornado moves.",
+        "The path is the only thing that matters — being near it is survivable, being in front of it is not."
+      ],
+      "killSpots": "Any building on the funnel's path, and any open crossing in front of it. Players die by moving toward the next cover instead of away from the track.",
+      "prep": [
+        "Find the funnel before you commit to a building, and stand behind it.",
+        "Do not use a building that sits directly on its line — it will not be there.",
+        "Keep a route that stays behind the track as it moves across the map."
+      ],
+      "ifCaught": "Run perpendicular to the track, not away from it in a straight line. Getting behind the funnel ends the threat; outrunning it does not.",
+      "worstMaps": "Suburban Neighborhood — the houses are the cover and the funnel takes the houses."
     },
     {
       "slug": "all-ice-melts",
@@ -132,7 +258,21 @@
       "summary": "Sea level rises and the heat scorches. The water takes the low ground first while the temperature works on everyone still outside.",
       "howToGet": "Go up and stay dry, the same as a tsunami round - this one is slower, so there is time to get there properly.",
       "sources": 1,
-      "verified": true
+      "verified": true,
+      "banner": "What if all the ice on Earth melts?",
+      "stages": [
+        "Sea level rises and takes the low ground first, the same way a tsunami round does but slower.",
+        "The heat turns lethal for anyone still outside, so the round is a race between water and exposure.",
+        "The shoreline keeps advancing, which means a position that is dry now is not dry at the end."
+      ],
+      "killSpots": "Low ground and open sun. This scenario gives you more time than a tsunami and punishes players who spend that time in the street.",
+      "prep": [
+        "Go up early, the same as a water scenario — you have time to do it properly.",
+        "Prefer a position with shade or an interior for the heat half of the round.",
+        "Do not plan to come back down for anything."
+      ],
+      "ifCaught": "Climb and get indoors — both halves of this scenario are solved by the same move. Standing in the sun at street level loses to either one.",
+      "worstMaps": "Coastal Resort and Harbor Port for the water, Suburban Neighborhood for the exposure."
     },
     {
       "slug": "solar-flare",
@@ -143,31 +283,109 @@
       "summary": "Radiation fills the air, electronics die and rooftops melt. The roof that saved you in a tsunami is the wrong place here, because the top of the map is where the flare lands.",
       "howToGet": "Get off the roof and into a building. Where the tsunami answer is up, this one is down and indoors.",
       "sources": 1,
-      "verified": true
+      "verified": true,
+      "banner": "What if the largest solar flare ever hits?",
+      "stages": [
+        "Radiation fills the air, so the open sky becomes the damage source.",
+        "Electronics die, which strips out anything powered on the map.",
+        "Rooftops melt — the highest ground, the one that saves you in a water round, is where the flare lands."
+      ],
+      "killSpots": "Rooftops and open sky. This is the scenario that punishes the habit built by every water round: climbing first.",
+      "prep": [
+        "Get indoors and stay low. Down is the answer here, not up.",
+        "Do not rely on anything powered once the flare starts.",
+        "If you are on a roof when the banner fires, spend the whole 30 seconds getting off it."
+      ],
+      "ifCaught": "Get under a roof immediately, even a low one. Distance from the sky matters more than the quality of the shelter.",
+      "worstMaps": "Any map where the only cover is a rooftop — the Golden Gate crossing has the least indoor space of any recorded map."
     }
   ],
   "announced": [
-    { "name": "Twice as much oxygen", "note": "Banner confirmed, hazard not documented yet." },
-    { "name": "Earth enters a planet-sized storm", "note": "Banner confirmed in creator footage; the storm is visible on the skyline before it reaches the map." },
-    { "name": "Earth spins backwards", "note": "Banner confirmed, hazard not documented yet." },
-    { "name": "Another planet passes Earth", "note": "Banner confirmed, hazard not documented yet." },
-    { "name": "Toxic air", "note": "Banner confirmed, hazard not documented yet." },
-    { "name": "A month of rain falls every few minutes", "note": "Banner confirmed, hazard not documented yet." },
-    { "name": "Earth loses its atmosphere", "note": "Banner confirmed, hazard not documented yet." },
-    { "name": "The ocean vanishes", "note": "Banner confirmed, ends in a salt storm." },
-    { "name": "The biggest bomb ever detonated", "note": "Banner confirmed, hazard not documented yet." },
-    { "name": "A city-killing asteroid", "note": "Banner confirmed, hazard not documented yet." },
-    { "name": "An earthquake sequence", "note": "Banner confirmed: foreshock, major quake, then aftershocks." },
-    { "name": "THE STORM WILL NEVER END", "note": "Banner confirmed, described in-game as a tornado that never stops." }
+    {
+      "name": "Twice as much oxygen",
+      "note": "Banner confirmed, hazard not documented yet."
+    },
+    {
+      "name": "Earth enters a planet-sized storm",
+      "note": "Banner confirmed in creator footage; the storm is visible on the skyline before it reaches the map."
+    },
+    {
+      "name": "Earth spins backwards",
+      "note": "Banner confirmed, hazard not documented yet."
+    },
+    {
+      "name": "Another planet passes Earth",
+      "note": "Banner confirmed, hazard not documented yet."
+    },
+    {
+      "name": "Toxic air",
+      "note": "Banner confirmed, hazard not documented yet."
+    },
+    {
+      "name": "A month of rain falls every few minutes",
+      "note": "Banner confirmed, hazard not documented yet."
+    },
+    {
+      "name": "Earth loses its atmosphere",
+      "note": "Banner confirmed, hazard not documented yet."
+    },
+    {
+      "name": "The ocean vanishes",
+      "note": "Banner confirmed, ends in a salt storm."
+    },
+    {
+      "name": "The biggest bomb ever detonated",
+      "note": "Banner confirmed, hazard not documented yet."
+    },
+    {
+      "name": "A city-killing asteroid",
+      "note": "Banner confirmed, hazard not documented yet."
+    },
+    {
+      "name": "An earthquake sequence",
+      "note": "Banner confirmed: foreshock, major quake, then aftershocks."
+    },
+    {
+      "name": "THE STORM WILL NEVER END",
+      "note": "Banner confirmed, described in-game as a tornado that never stops."
+    }
   ],
   "maps": [
-    { "slug": "suburban-neighborhood", "name": "Suburban Neighborhood", "note": "Street-level houses, garages that open with the interact prompt and drivable cars. Vehicles hold several players at once, but a ride is never guaranteed." },
-    { "slug": "thrill-park", "name": "Thrill Park", "note": "Themed park map with landmarks that make it easy to recognise before the banner fires." },
-    { "slug": "alpine-ski-resort", "name": "Alpine Ski Resort", "note": "Confirmed in creator footage." },
-    { "slug": "coastal-resort", "name": "Coastal Resort", "note": "Confirmed in creator footage; low shoreline makes water scenarios harder." },
-    { "slug": "harbor-port", "name": "Harbor Port", "note": "Confirmed in creator footage." },
-    { "slug": "golden-gate-crossing", "name": "Golden Gate crossing", "note": "Bridge-style map seen in footage; the deck is the only way across." },
-    { "slug": "jungle-pyramids", "name": "Jungle Pyramids", "note": "Confirmed in creator footage." }
+    {
+      "slug": "suburban-neighborhood",
+      "name": "Suburban Neighborhood",
+      "note": "Street-level houses, garages that open with the interact prompt and drivable cars. Vehicles hold several players at once, but a ride is never guaranteed."
+    },
+    {
+      "slug": "thrill-park",
+      "name": "Thrill Park",
+      "note": "Themed park map with landmarks that make it easy to recognise before the banner fires."
+    },
+    {
+      "slug": "alpine-ski-resort",
+      "name": "Alpine Ski Resort",
+      "note": "Confirmed in creator footage."
+    },
+    {
+      "slug": "coastal-resort",
+      "name": "Coastal Resort",
+      "note": "Confirmed in creator footage; low shoreline makes water scenarios harder."
+    },
+    {
+      "slug": "harbor-port",
+      "name": "Harbor Port",
+      "note": "Confirmed in creator footage."
+    },
+    {
+      "slug": "golden-gate-crossing",
+      "name": "Golden Gate crossing",
+      "note": "Bridge-style map seen in footage; the deck is the only way across."
+    },
+    {
+      "slug": "jungle-pyramids",
+      "name": "Jungle Pyramids",
+      "note": "Confirmed in creator footage."
+    }
   ],
   "guide": [
     {
@@ -192,8 +410,16 @@
     }
   ],
   "videos": [
-    { "id": "UY4GKHY17F8", "title": "ROBLOX WHAT IF DISASTERS...", "channel": "Votex" },
-    { "id": "Mw8L-ulGcyY", "title": "Roblox WHAT IF DISASTERS...?", "channel": "YouTube" }
+    {
+      "id": "UY4GKHY17F8",
+      "title": "ROBLOX WHAT IF DISASTERS...",
+      "channel": "Votex"
+    },
+    {
+      "id": "Mw8L-ulGcyY",
+      "title": "Roblox WHAT IF DISASTERS...?",
+      "channel": "YouTube"
+    }
   ],
   "gaps": [
     "The developer advertises more scenarios than the 22 recorded here; the exact current count has not been published as a list.",

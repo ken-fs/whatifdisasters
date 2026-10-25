@@ -53,6 +53,14 @@ export default async function EntityPage({ params }: RouteParams) {
       <section className="tile max-w-2xl p-5">
         <table className="data">
           <tbody>
+            {e.banner && (
+              <tr>
+                <th scope="row" className="w-40">
+                  The banner says
+                </th>
+                <td>&ldquo;{e.banner}&rdquo;</td>
+              </tr>
+            )}
             {facts.map(([k, v]) => (
               <tr key={k}>
                 <th scope="row" className="w-40">
@@ -70,6 +78,49 @@ export default async function EntityPage({ params }: RouteParams) {
           </p>
         )}
       </section>
+
+      {e.stages && e.stages.length > 0 && (
+        <section className="mt-14 max-w-3xl">
+          <h2 className="text-2xl">How the round plays out</h2>
+          <ol className="mt-4 grid gap-3">
+            {e.stages.map((s, i) => (
+              <li key={s} className="tile p-4">
+                <span className="num mr-2 font-serif text-rust">{i + 1}.</span>
+                <span className="text-ink-soft">{s}</span>
+              </li>
+            ))}
+          </ol>
+          {e.killSpots && (
+            <p className="mt-5 text-ink-soft">
+              <strong className="text-ink">Where it kills you:</strong> {e.killSpots}
+            </p>
+          )}
+        </section>
+      )}
+
+      {e.prep && e.prep.length > 0 && (
+        <section className="mt-14 max-w-3xl">
+          <h2 className="text-2xl">What to do in the 30-second head start</h2>
+          <ul className="mt-4 grid gap-3">
+            {e.prep.map((p) => (
+              <li key={p} className="flex gap-3 text-ink-soft">
+                <span className="text-rust">›</span>
+                <span>{p}</span>
+              </li>
+            ))}
+          </ul>
+          {e.ifCaught && (
+            <p className="mt-5 text-ink-soft">
+              <strong className="text-ink">If you are already caught out:</strong> {e.ifCaught}
+            </p>
+          )}
+          {e.worstMaps && (
+            <p className="mt-3 text-ink-soft">
+              <strong className="text-ink">Worst maps for it:</strong> {e.worstMaps}
+            </p>
+          )}
+        </section>
+      )}
 
       <p className="mt-10 text-sm text-ink-soft">
         Surviving is half preparation and half knowing the map — see the <Link href="/maps/" className="text-link">map list</Link> and the{" "}

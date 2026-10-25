@@ -18,6 +18,12 @@ export type Entity = {
   role: string | null;
   summary: string;
   howToGet: string | null;
+  banner?: string;
+  stages?: string[];
+  killSpots?: string;
+  prep?: string[];
+  ifCaught?: string;
+  worstMaps?: string;
   sources: number;
   verified: boolean;
 };
