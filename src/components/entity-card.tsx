@@ -6,7 +6,7 @@ import { entityHref } from "@/lib/site";
 export function EntityCard({ e }: { e: Entity }) {
   return (
     <Link href={entityHref(e.slug)} className="card block overflow-hidden">
-      {e.image && (
+      {e.image ? (
         <img
           src={e.image}
           alt={`${e.name} in game`}
@@ -16,6 +16,11 @@ export function EntityCard({ e }: { e: Entity }) {
           decoding="async"
           className="aspect-video w-full object-cover"
         />
+      ) : (
+        // No screenshot yet: same 16:9 block so the grid stays even, themed by hazard type.
+        <div className="flex aspect-video w-full items-center justify-center bg-[color-mix(in_oklab,var(--color-line),transparent_55%)]">
+          <span className="text-xs uppercase tracking-widest text-ink-faint">{e.rarity ?? "Undocumented"}</span>
+        </div>
       )}
       <div className="p-5">
       <div className="flex flex-wrap items-center gap-2">
