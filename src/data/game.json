@@ -152,7 +152,7 @@
     },
     {
       "slug": "atmosphere-loss",
-      "name": "Earth Loses Its Atmosphere",
+      "name": "The Atmosphere Disappears",
       "tier": null,
       "rarity": "Cosmic",
       "role": "Any map, windows and open air",
@@ -276,6 +276,56 @@
       "verified": true
     },
     {
+      "slug": "witching-hour",
+      "name": "The Witching Hour",
+      "tier": null,
+      "rarity": "Ground",
+      "role": "Downtown City (recorded), night maps",
+      "summary": "The map goes dark and black thorns burst up out of the street and straight through the buildings. It is the round the game's own Halloween crate is named after, and the recorded prompt is simply to run.",
+      "howToGet": "Keep moving and stay out of the streets. The thorns come up through the ground and through structures, so standing still — indoors or not — is what gets you.",
+      "banner": "What if the witching hour came?",
+      "stages": [
+        "The map drops into night and the HUD stage reads THORNS: BURSTING FROM THE GROUND.",
+        "Black vines spear up out of the street and straight through the buildings, so cover stops being cover.",
+        "The prompt is RUN FOR YOUR LIFE for the rest of the round — the hazard keeps coming up under wherever you stopped."
+      ],
+      "killSpots": "Standing still anywhere, and especially in the street. Unlike a debris or flood round, hiding inside does not help: the recorded stage description says the vines go through buildings.",
+      "prep": [
+        "Pick a route rather than a hiding spot during the 30 seconds.",
+        "Get off the street — the vines come up through it first.",
+        "Keep moving once it starts; stopping to watch a vine line is how players get caught."
+      ],
+      "ifCaught": "Run, and change direction rather than backing into a corner. There is no shelter that holds for the whole round here.",
+      "worstMaps": "Downtown City (the recorded map) — dense streets with lots of ground for the vines to come up through.",
+      "sources": 1,
+      "verified": true
+    },
+    {
+      "slug": "oxygen-doubles",
+      "name": "Oxygen Doubles",
+      "tier": null,
+      "rarity": "Fire",
+      "role": "Stadium District (recorded), city maps",
+      "summary": "Twice the oxygen turns any spark into a firestorm: the HUD tracks FIRE SPREAD SPEED at 6.2× normal in the recorded round, fire runs along the ground and up the vines, and black smoke rolls down the streets.",
+      "howToGet": "Get upstairs and stay there. The recorded objective is STAY UPSTAIRS with a temperature readout — the fire owns the ground floor, so height is the answer for once.",
+      "banner": "What if there was twice as much oxygen?",
+      "stages": [
+        "The HUD starts tracking fire spread speed — 6.2× normal in the recorded round.",
+        "Fire runs along the ground and climbs the vines, and black smoke rolls down the streets.",
+        "The round keeps the objective on STAY UPSTAIRS while the temperature readout climbs."
+      ],
+      "killSpots": "Ground level and anything connected to it. The smoke is the part people miss — it comes down the streets rather than up.",
+      "prep": [
+        "Find stairs or a ramp during the 30 seconds — upper floors are the whole strategy.",
+        "Do not plan to cross the street level later in the round.",
+        "Watch the temperature readout: it tells you how close the fire front is."
+      ],
+      "ifCaught": "Climb, even to a worse building, rather than running at ground level. Staying upstairs is the only prompt this round gives.",
+      "worstMaps": "Stadium District (the recorded map) and Downtown City — dense buildings the fire front travels between.",
+      "sources": 1,
+      "verified": true
+    },
+    {
       "slug": "earthquake-sequence",
       "name": "An Earthquake Sequence",
       "tier": null,
@@ -377,7 +427,7 @@
     },
     {
       "slug": "floor-becomes-lava",
-      "name": "The Floor Becomes Lava",
+      "name": "The Floor Is Lava",
       "tier": null,
       "rarity": "Ground",
       "role": "Any map, ground level",
@@ -402,7 +452,7 @@
     },
     {
       "slug": "zombie-outbreak",
-      "name": "A Zombie Outbreak",
+      "name": "Zombie Outbreak",
       "tier": null,
       "rarity": "Biological",
       "role": "Any map, indoors and streets",
@@ -427,7 +477,7 @@
     },
     {
       "slug": "earth-tilts",
-      "name": "Earth Tilts 90°",
+      "name": "Earth Tilts 90 Degrees",
       "tier": null,
       "rarity": "Gravity",
       "role": "Any map, whole terrain",
@@ -502,7 +552,7 @@
     },
     {
       "slug": "all-ice-melts",
-      "name": "All Ice on Earth Melts",
+      "name": "All Ice Melts",
       "tier": null,
       "rarity": "Water",
       "role": "Coastal and low maps",
@@ -553,10 +603,6 @@
   ],
   "announced": [
     {
-      "name": "Twice as much oxygen",
-      "note": "Banner confirmed, hazard not documented yet."
-    },
-    {
       "name": "A month of rain falls every few minutes",
       "note": "Banner confirmed, hazard not documented yet."
     },
@@ -605,8 +651,8 @@
       "use": "Docks and flat deck space: very little height and no roof cover. Water scenarios are close to unwinnable at deck level, so the plan is the nearest crane or warehouse roof."
     },
     {
-      "slug": "golden-gate-crossing",
-      "name": "Golden Gate crossing",
+      "slug": "golden-gate",
+      "name": "Golden Gate",
       "note": "Bridge-style map seen in footage; the deck is the only way across.",
       "use": "The deck is the only way across, which makes the crossing itself the hazard during a bomb, toxic air or flare round. Train carriages are the movable cover here."
     },
@@ -627,6 +673,24 @@
       "name": "Venice",
       "note": "Canal city recorded with the planet flyby: water at street level and towers above it.",
       "use": "Low interiors are the answer on this one — the flyby lifts what is above ground, and the canals leave little dry street to run along."
+    },
+    {
+      "slug": "downtown-city",
+      "name": "Downtown City",
+      "note": "Dense street grid at night — the map the witching hour was recorded on.",
+      "use": "Short blocks mean you can always keep moving, which is the only answer to thorns. Ground level is the hazard, not the floor."
+    },
+    {
+      "slug": "stadium-district",
+      "name": "Stadium District",
+      "note": "Stadium, forecourt and stands — recorded with the oxygen round.",
+      "use": "The stands are the upstairs the fire round asks for; the forecourt is the wide open ground where the fire front moves fastest."
+    },
+    {
+      "slug": "hoover-dam",
+      "name": "Hoover Dam",
+      "note": "Dam structure with a drop on one side — recorded late in a session.",
+      "use": "Very little roof cover but a lot of vertical structure, so it suits water and tilt rounds and punishes flare or bomb rounds."
     }
   ],
   "guide": [
