@@ -55,7 +55,7 @@
     },
     {
       "slug": "sun-disappears",
-      "name": "The Sun Disappears",
+      "name": "THE SUN DISAPPEARS",
       "tier": null,
       "rarity": "Cosmic",
       "role": "Any map, every open area",
@@ -76,7 +76,10 @@
         "Do not plan a route that needs street time later in the round. The cold gets worse, not better."
       ],
       "ifCaught": "Break line of sight to the open sky and get inside the nearest building, even one you did not plan on. A worse shelter beats a better one you never reach.",
-      "worstMaps": "Any map with long exposed crossings — the Golden Gate crossing has the most unavoidable outdoor distance between covers."
+      "worstMaps": "Any map with long exposed crossings — the Golden Gate crossing has the most unavoidable outdoor distance between covers.",
+      "image": "/media/dis-sun-disappears.jpg",
+      "imageCredit": "RobloMine",
+      "hud": "The panel tracks power on the bar (43% ONLINE in the recorded round): the grid shutting down is what turns the round cold."
     },
     {
       "slug": "mega-tsunami",
@@ -133,7 +136,7 @@
     },
     {
       "slug": "earth-froze",
-      "name": "Earth Completely Freezes",
+      "name": "EARTH FREEZES OVER",
       "tier": null,
       "rarity": "Temperature",
       "role": "Any map, outdoors",
@@ -154,7 +157,10 @@
       "ifCaught": "Get inside the nearest intact building and stay put. Moving again after you are inside is what gets players caught when a structure comes down.",
       "worstMaps": "Open maps with flimsy structures — Jungle Pyramids and the Golden Gate crossing.",
       "sources": 1,
-      "verified": true
+      "verified": true,
+      "image": "/media/dis-earth-froze.jpg",
+      "imageCredit": "bluciour",
+      "hud": "The stage panel reads THE SUN IS FADING — the thick air is freezing and sunlight can no longer reach the ground."
     },
     {
       "slug": "atmosphere-loss",
@@ -532,7 +538,7 @@
     },
     {
       "slug": "every-volcano-erupts",
-      "name": "Every Volcano Erupts at Once",
+      "name": "EVERY VOLCANO ERUPTS",
       "tier": null,
       "rarity": "Ground",
       "role": "Any map, sky and ground",
@@ -553,11 +559,14 @@
         "Plan one backup cover nearby — the first one gets hit eventually."
       ],
       "ifCaught": "Move under cover in short bursts and watch the sky between sprints. Crossing open ground in one run is what gets players hit.",
-      "worstMaps": "Jungle Pyramids and Alpine Ski Resort — open terrain with long sightlines and little roof cover."
+      "worstMaps": "Jungle Pyramids and Alpine Ski Resort — open terrain with long sightlines and little roof cover.",
+      "image": "/media/dis-every-volcano-erupts.jpg",
+      "imageCredit": "RobloMine",
+      "hud": "The sound readout on the recorded round peaked at 47 with the sky filled — the rocks come down before the ground opens."
     },
     {
       "slug": "f5-tornado",
-      "name": "An F5 Tornado",
+      "name": "AN EF5 TORNADO HITS YOUR STREET",
       "tier": null,
       "rarity": "Wind",
       "role": "Any map, streets",
@@ -578,7 +587,10 @@
         "Keep a route that stays behind the track as it moves across the map."
       ],
       "ifCaught": "Run perpendicular to the track, not away from it in a straight line. Getting behind the funnel ends the threat; outrunning it does not.",
-      "worstMaps": "Suburban Neighborhood — the houses are the cover and the funnel takes the houses."
+      "worstMaps": "Suburban Neighborhood — the houses are the cover and the funnel takes the houses.",
+      "image": "/media/dis-f5-tornado.jpg",
+      "imageCredit": "bluciour",
+      "hud": "The readout says TORNADO FORMING… EF5, and the objective is STAY OUT OF THE STREET — the buildings are the shelter, the street is the funnel's path."
     },
     {
       "slug": "all-ice-melts",
