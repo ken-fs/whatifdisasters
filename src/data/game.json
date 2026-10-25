@@ -126,6 +126,131 @@
       "verified": true
     },
     {
+      "slug": "earth-froze",
+      "name": "Earth Completely Freezes",
+      "tier": null,
+      "rarity": "Temperature",
+      "role": "Any map, outdoors",
+      "summary": "Snow starts falling and the temperature keeps dropping until the oceans freeze solid. Buildings give out from the cold rather than from a wave, so the round is a shelter round with collapsing cover.",
+      "howToGet": "Get into a building and stay in the warmest corner. Recorded rounds survived by not moving at all — the buildings that fall are the ones people leave.",
+      "banner": "What if Earth completely froze?",
+      "stages": [
+        "Snow starts falling on a map that would never normally see it, and the HUD switches to finding shelter.",
+        "So cold that buildings begin to fail — structures collapse on their own, not because anything hit them.",
+        "The oceans freeze solid — the end state, where anything not indoors is done."
+      ],
+      "killSpots": "Outdoors, and inside a building that is already failing. The damage comes from being exposed when a structure gives out, so standing under a cracking roof is not shelter.",
+      "prep": [
+        "Pick a solid interior, not an open or damaged one.",
+        "Stay in one warm corner instead of moving between buildings.",
+        "Do not go exploring for a better building once the snow starts."
+      ],
+      "ifCaught": "Get inside the nearest intact building and stay put. Moving again after you are inside is what gets players caught when a structure comes down.",
+      "worstMaps": "Open maps with flimsy structures — Jungle Pyramids and the Golden Gate crossing.",
+      "sources": 1,
+      "verified": true
+    },
+    {
+      "slug": "atmosphere-loss",
+      "name": "Earth Loses Its Atmosphere",
+      "tier": null,
+      "rarity": "Cosmic",
+      "role": "Any map, windows and open air",
+      "summary": "Windows break, the wind tears loose everything not fixed, the sun burns without protection and the oceans boil. With no air pressure there is no sound, which removes the usual audio warning.",
+      "howToGet": "Find a sealed room. A car does not count, and a room with broken windows does not count — the survival recorded was in an interior with the glass still intact.",
+      "banner": "What if Earth lost its atmosphere?",
+      "stages": [
+        "The wind picks up and everything loose starts flying — the first sign that the air itself is the hazard.",
+        "Windows break and the sky darkens; unprotected exposure burns, and the oceans start boiling.",
+        "The round settles into the end state: no atmosphere, no sound, nothing safe outside."
+      ],
+      "killSpots": "Anywhere without intact glass between you and the outside: streets, roofs, and cars. Players die by treating a vehicle as shelter.",
+      "prep": [
+        "Find a room with unbroken windows before the wind stage.",
+        "Do not use a car — recorded rounds show it does nothing.",
+        "Stay away from the windows once inside; they are the thing that fails."
+      ],
+      "ifCaught": "Run for the nearest interior with intact glass and close the door behind you. If the windows in your building are already gone, move to another one before the burning stage.",
+      "worstMaps": "The Golden Gate crossing has almost no interior, and the deck is fully exposed.",
+      "sources": 1,
+      "verified": true
+    },
+    {
+      "slug": "thousand-year-rain",
+      "name": "It Rains for 1,000 Years",
+      "tier": null,
+      "rarity": "Water",
+      "role": "Any map, low ground",
+      "summary": "The rain does not stop. The HUD counts the downpour forward by months and then years while the water level climbs, until the map is an island and pieces of it break off.",
+      "howToGet": "Get to the highest ground immediately and expect it to be submerged anyway — the recorded survival came from staying on top of a structure while the water and the structure both failed around it.",
+      "banner": "What if it rained for 1,000 years?",
+      "stages": [
+        "The rain starts and the counter begins: a month of rain, then ten, then years.",
+        "Low ground submerges and the map starts losing pieces as structures break off.",
+        "At the end of the count the map is effectively an island; anything that was not high is gone."
+      ],
+      "killSpots": "Low ground at any point, and swimming distance from a structure once the water is up. The water keeps rising slowly enough that players underestimate it.",
+      "prep": [
+        "Climb before the counter reaches months — not after the streets flood.",
+        "Pick a structure with a top you can stand on, not just a roof you can be under.",
+        "Do not plan to swim; the recorded round ends with the map itself breaking apart."
+      ],
+      "ifCaught": "Climb the nearest structure and keep climbing as pieces break off. Staying on a submerging surface is the same as staying in the water.",
+      "worstMaps": "Suburban Neighborhood and Coastal Resort — low buildings with limited height.",
+      "sources": 1,
+      "verified": true
+    },
+    {
+      "slug": "yellowstone-erupts",
+      "name": "Yellowstone Erupts",
+      "tier": null,
+      "rarity": "Ground",
+      "role": "Any map, outdoors",
+      "summary": "A single supervolcano rather than the every-volcano round: the surface turns toxic, a wall of ash moves across the map, and the heat arrives with it. Underground sealed space is the only cover that works.",
+      "howToGet": "Get into a sealed underground space — a bunker — before the eruption reaches the map. A normal building is not enough once the ash cloud arrives.",
+      "banner": "What if Yellowstone erupted?",
+      "stages": [
+        "The eruption starts and the air outside turns toxic — being outdoors becomes damage.",
+        "An ash cloud moves across the map, bringing heat with it.",
+        "The surface stays lethal for the rest of the round, so anything above ground is lost."
+      ],
+      "killSpots": "The surface at any point after the eruption: streets, roofs and ordinary buildings. Players die by coming back up to look.",
+      "prep": [
+        "Find the bunker or underground space during the first stage, before the ash arrives.",
+        "Do not come back up to watch the cloud — the recorded death was on the stairs.",
+        "Treat the roof as gone for the whole round, not just for the blast."
+      ],
+      "ifCaught": "Get underground and stay there. The round is decided by whether you had sealed space, not by how you move once the cloud is overhead.",
+      "worstMaps": "Maps without underground space excepted — Jungle Pyramids has the most sheltered ground of the recorded maps.",
+      "sources": 1,
+      "verified": true
+    },
+    {
+      "slug": "spins-backwards",
+      "name": "Earth Spins Backwards",
+      "tier": null,
+      "rarity": "Wind",
+      "role": "Any map, whole terrain",
+      "summary": "The planet reverses its rotation. Recorded rounds show the storms reversing direction with it, which means the safe side of a wind hazard is the opposite of the one you learned.",
+      "howToGet": "Do not rely on the direction a storm was tracking before the banner — after the reversal, the side you are standing on may be the exposed one. Re-read the map when the reversal hits.",
+      "banner": "What if Earth spins backwards?",
+      "stages": [
+        "The rotation reverses and the HUD reports it as the scenario starting.",
+        "Weather already on the map reverses direction with the planet — recorded footage notes every storm reversing.",
+        "From there the round plays out with the wind coming from the opposite side, so old cover positions are wrong."
+      ],
+      "killSpots": "Whatever position you picked for a wind hazard before the reversal. The hazard itself is familiar; the direction is inverted.",
+      "prep": [
+        "Do not commit to a wind shelter before the banner names this scenario.",
+        "Once the reversal is announced, re-check which side of your cover is now exposed.",
+        "Assume anything that was sheltering you from wind is now doing the opposite."
+      ],
+      "ifCaught": "Move to the other side of whatever you were hiding behind. The same object is cover or exposure depending on which direction the wind is now coming from.",
+      "worstMaps": "Open maps where the only cover has one side — the Golden Gate crossing and Jungle Pyramids.",
+      "sources": 1,
+      "verified": true
+    },
+    {
       "slug": "earthquake-sequence",
       "name": "An Earthquake Sequence",
       "tier": null,
@@ -407,19 +532,11 @@
       "note": "Banner confirmed, hazard not documented yet."
     },
     {
-      "name": "Earth spins backwards",
-      "note": "Banner confirmed, hazard not documented yet."
-    },
-    {
       "name": "Another planet passes Earth",
       "note": "Banner confirmed, hazard not documented yet."
     },
     {
       "name": "A month of rain falls every few minutes",
-      "note": "Banner confirmed, hazard not documented yet."
-    },
-    {
-      "name": "Earth loses its atmosphere",
       "note": "Banner confirmed, hazard not documented yet."
     },
     {
