@@ -1,0 +1,5 @@
+# Cloudflare Workers static assets: the generated share card has no extension (Next metadata route),
+# so say it is a PNG; some crawlers (Facebook, Discord) drop images served as octet-stream.
+/opengraph-image
+  Content-Type: image/png
+  Cache-Control: public, max-age=86400

@@ -1,0 +1,67 @@
+{
+  "_readme": "All game facts the pages print. Placeholder content: replace every entry with sourced data, then set _placeholder to false (scripts/check-export.mjs warns while it is true). Unknown facts stay null — the pages render a gap, never a guess.",
+  "_placeholder": true,
+  "lastChecked": "2026-10-11",
+  "codes": [
+    { "code": "EXAMPLE100K", "reward": "500 Gems and 2 Spins", "added": "2026-10-10", "sources": 2 },
+    { "code": "WELCOME", "reward": "250 Gems", "added": "2026-10-01", "sources": 3 },
+    { "code": "UPDATE1", "reward": "1 Lucky Potion", "added": "2026-09-28", "sources": 2 }
+  ],
+  "expiredCodes": [
+    { "code": "RELEASE", "reward": "100 Gems" }
+  ],
+  "redeemSteps": [
+    "Open the game and wait until your character loads in.",
+    "Press the Codes button on the side of the screen.",
+    "Paste a code from this page into the box. Codes are case-sensitive, so copy them instead of typing.",
+    "Press Redeem. The reward shows up in your inventory right away."
+  ],
+  "codesFaq": [
+    { "q": "Why is my code not working?", "a": "Most of the time it was typed by hand and one letter is off. Codes are case-sensitive, so use the Copy button. If it still fails, the code has probably expired." },
+    { "q": "How often do new codes come out?", "a": "Usually with each update or when the game hits a likes or visits milestone. This page is re-checked whenever the game updates." }
+  ],
+  "entities": [
+    {
+      "slug": "example-unit-a",
+      "name": "Example Unit A",
+      "tier": "S",
+      "rarity": "Mythic",
+      "role": "Damage",
+      "summary": "Placeholder entry. Say in one or two plain sentences what this unit is good at and who should use it.",
+      "howToGet": "Summon banner (placeholder)",
+      "sources": 2,
+      "verified": true
+    },
+    {
+      "slug": "example-unit-b",
+      "name": "Example Unit B",
+      "tier": "A",
+      "rarity": "Legendary",
+      "role": "Support",
+      "summary": "Placeholder entry. A second unit so the tier list and the list page have something to group.",
+      "howToGet": "Quest reward (placeholder)",
+      "sources": 2,
+      "verified": true
+    },
+    {
+      "slug": "example-unit-c",
+      "name": "Example Unit C",
+      "tier": null,
+      "rarity": null,
+      "role": null,
+      "summary": "Placeholder for an entity that is real but not yet documented. The page shows the gap instead of inventing numbers.",
+      "howToGet": null,
+      "sources": 1,
+      "verified": false
+    }
+  ],
+  "guide": [
+    { "heading": "Your first ten minutes", "body": "Placeholder. Tell a new player what to do first, in the order they will actually do it." },
+    { "heading": "What to spend currency on", "body": "Placeholder. Point to the one or two things that matter early, and say what to skip." },
+    { "heading": "When to reroll", "body": "Placeholder. Keep it short and honest: if nobody knows the odds, say so." }
+  ],
+  "videos": [],
+  "gaps": [
+    "Placeholder: list what nobody has published yet (drop rates, exact stats). Readers trust a site that says what it does not know."
+  ]
+}

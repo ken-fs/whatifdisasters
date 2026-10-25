@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "whatifdisasters",
+  "compatibility_date": "2026-08-01",
+  // Static site: `output: "export"` emits ./out, served directly as assets.
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  },
+  // Apex + www as Worker custom domains. Only deploy after the Cloudflare zone is
+  // ACTIVE: binding while the zone is pending leaves a certificate that never issues
+  // (TLS handshake reads 0 bytes). www → apex 301 is a separate redirect rule:
+  // python3 ~/Desktop/david/Ship/scripts/cf-www-redirect.py <domain>
+  "routes": [
+    { "pattern": "what-if-disasters.wiki", "custom_domain": true },
+    { "pattern": "www.what-if-disasters.wiki", "custom_domain": true }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "_readme": "The one config source for this site. scripts/new-site.mjs fills it in; edit by hand after that. `game.official` must be the real store link (roblox.com/games/<placeId>/... or store.steampowered.com/app/<appid>/): the daily patrol reads it to notice game updates the site has not caught up with. `entity.path` must match the folder name under src/app/ (rename both together).",
+  "siteName": "What If Disasters Wiki",
+  "shortName": "What If Disasters",
+  "domain": "what-if-disasters.wiki",
+  "contactEmail": "hello@what-if-disasters.wiki",
+  "description": "Working What If Disasters codes with the exact reward for each, a tier list, a page for every unit and a short beginner guide. Fan-made, every number has a source.",
+  "game": {
+    "name": "What If Disasters",
+    "platform": "roblox",
+    "official": "https://www.roblox.com/games/109440485612336/what-if-disasters",
+    "developer": "",
+    "community": ""
+  },
+  "entity": {
+    "path": "units",
+    "singular": "unit",
+    "plural": "units"
+  },
+  "gaId": ""
+}

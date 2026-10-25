@@ -1,0 +1,50 @@
+# Push to main → build → wrangler deploy → check the live deploy marker.
+# Same shape as Ship/scripts/setup-gh-deploy.py output; that script also stores the
+# two secrets: CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID.
+# Don't connect Cloudflare's own Git integration as well — both would deploy.
+name: deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    # The template repo itself never deploys.
+    if: github.repository != 'ken-fs/game-template-next'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install
+        run: |
+          corepack enable
+          pnpm install --frozen-lockfile
+
+      # prebuild writes the deploy marker from GITHUB_SHA; postbuild checks the export.
+      - name: Build
+        run: pnpm run build
+
+      - name: Deploy
+        run: pnpm exec wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Verify live deploy marker
+        run: |
+          for i in 1 2 3 4 5 6; do
+            live=$(curl -s "https://what-if-disasters.wiki/.well-known/deploy.txt?ci=$GITHUB_RUN_ID-$i" | tr -d '\n')
+            [ "$live" = "$GITHUB_SHA" ] && echo "live = $live" && exit 0
+            sleep 10
+          done
+          echo "live marker '$live' != $GITHUB_SHA"; exit 1

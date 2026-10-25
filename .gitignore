@@ -1,0 +1,31 @@
+# dependencies
+/node_modules
+.pnpm-debug.log*
+npm-debug.log*
+
+# next.js / build output
+/.next/
+/out/
+/build
+*.tsbuildinfo
+next-env.d.ts
+
+# wrangler local state
+/.wrangler/
+
+# env files. Nothing here needs one: the GA id lives in src/config/site.json
+# (it is public by design) and Cloudflare secrets live in GitHub Actions.
+.env*
+
+# misc
+.DS_Store
+*.pem
+
+# Deploy markers are written by scripts/write-deploy-marker.mjs (prebuild) on every
+# build. Never commit them: a checked-in copy always lags one commit behind, and the
+# daily patrol then reports the live site as out of date.
+public/.well-known/deploy.txt
+public/.well-known/anvilwiki-deploy.txt
+
+# IndexNow key (the public copy lives in public/<key>.txt)
+.indexnow-key

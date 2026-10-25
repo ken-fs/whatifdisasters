@@ -1,0 +1,67 @@
+/* ═══ game-themes / candy —— 糖果新野兽派 ═══════════════════════════
+   参考：superdesign.dev「Neubrutalism Dashboard: Bold Candy Analytics UI with Hard Shadows」（Flareboard）
+   适合：Roblox 模拟器 / 大亨 / 跑酷 obby / 宠物 / 点击放置 / 儿童休闲；codes 页、价值表、tier list
+   签名动作：灰白底 + 24px 网格、2px 黑边 + 硬阴影（贴纸感）、糖果色图标块、彩色涨跌芯片
+   对比度：ink 18.0；粉色做文字用深粉 #d6246a（4.6）；亮粉 #ff3d81 只做色块，配黑字（5.6）
+   需要：npm i @fontsource/archivo-black @fontsource-variable/space-grotesk
+*/
+@import "@fontsource/archivo-black";
+@import "@fontsource-variable/space-grotesk";
+
+@theme {
+  --color-paper:      #fdf9f0;
+  --color-paper-edge: #f6f0e2;
+  --color-card:       #ffffff;
+  --color-ink:        #111111;
+  --color-ink-soft:   #3a3a3a;
+  --color-ink-faint:  #5c5c5c;
+  --color-rule:       #111111;
+  --color-rule-hard:  #111111;
+  --color-rust:       #d6246a;   /* 主强调（文字用深粉） */
+  --color-ember-lite: #ff3d81;   /* 色块用亮粉 */
+  --color-link-hover: color-mix(in srgb, var(--color-rust) 62%, var(--color-ink));   /* 链接悬停：ember-lite 在亮底上对比度不够（comic 2.3 / candy 3.2），这个 6.3 / 8.4 */
+  --color-ochre:      #ffd23f;   /* 金丝雀黄：高亮块 */
+  --color-moss:       #3ddc97;   /* 薄荷：上涨 / 完成 */
+  --color-lilac:      #c8a2ff;
+  --font-serif: "Archivo Black", sans-serif;
+  --font-sans:  "Space Grotesk Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono:  "Space Grotesk Variable", ui-sans-serif, sans-serif;
+  --font-code:  ui-monospace, Menlo, monospace;
+}
+
+body {
+  background-color: var(--color-paper);
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--color-ink) 6%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--color-ink) 6%, transparent) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: var(--color-ink); font-family: var(--font-sans); -webkit-font-smoothing: antialiased;
+}
+h1, h2 { font-family: var(--font-serif); font-weight: 400; letter-spacing: -0.02em; line-height: 1.02; text-wrap: balance; }
+h3, h4 { font-family: var(--font-sans); font-weight: 700; }
+.num, .font-mono, table td, table th { font-variant-numeric: tabular-nums; }
+
+.tag {
+  display: inline-block; font-size: .75rem; font-weight: 700; padding: .14rem .55rem;
+  background: var(--color-ochre); color: var(--color-ink); border: 2px solid var(--color-ink); border-radius: 999px;
+}
+.card, .tile { position: relative; background: var(--color-card); border: 2px solid var(--color-ink); border-radius: 14px; box-shadow: 5px 5px 0 var(--color-ink); }
+.card { transition: transform .2s cubic-bezier(.34,1.4,.64,1), box-shadow .2s cubic-bezier(.34,1.4,.64,1); }
+.card:hover { transform: translate(-2px,-2px); box-shadow: 8px 8px 0 var(--color-ink); color: inherit; }
+.card:active { transform: translate(3px,3px); box-shadow: 1px 1px 0 var(--color-ink); }
+
+.btn-ember {
+  display: inline-flex; align-items: center; gap: .5rem; font-weight: 700; font-size: .95rem; padding: .7rem 1.15rem;
+  background: var(--color-ember-lite); color: var(--color-ink); border: 2px solid var(--color-ink); border-radius: 12px;
+  box-shadow: 4px 4px 0 var(--color-ink);
+}
+.btn-ember:hover { color: var(--color-ink); transform: translate(-2px,-2px); box-shadow: 6px 6px 0 var(--color-ink); }
+.btn-ember:active { transform: translate(3px,3px); box-shadow: 1px 1px 0 var(--color-ink); }
+
+/* 首屏：三块会轻轻浮动的糖果贴纸 */
+.hero-glow { position: absolute; inset: 0; pointer-events: none; z-index: -1; }
+.hero-glow span { position: absolute; border: 2px solid var(--color-ink); box-shadow: 5px 5px 0 var(--color-ink); animation: candy-bob 4s cubic-bezier(.45,0,.55,1) infinite alternate; }
+.hero-glow span:nth-child(1) { right: 6%; top: 10%; width: 7.5rem; height: 7.5rem; border-radius: 26px; background: var(--color-ember-lite); transform: rotate(10deg); }
+.hero-glow span:nth-child(2) { right: 20%; top: 40%; width: 5rem; height: 5rem; border-radius: 50%; background: var(--color-moss); animation-delay: -1.3s; }
+.hero-glow span:nth-child(3) { right: 4%; bottom: 10%; width: 6rem; height: 3.6rem; border-radius: 14px; background: var(--color-lilac); transform: rotate(-8deg); animation-delay: -2.6s; }
+@keyframes candy-bob { from { translate: 0 0; } to { translate: 0 -10px; } }

@@ -1,0 +1,30 @@
+@import "tailwindcss";
+/*
+ * Theme = two files copied from Ship/game-themes (never edit them here):
+ *   src/styles/theme/base.css   ← game-themes/base.css
+ *   src/styles/theme/theme.css  ← game-themes/tokens/<id>.css (id in .theme.json)
+ * Switch or refresh with `node scripts/sync-theme.mjs [--theme <id>]`.
+ * A theme bug is fixed in game-themes first, then synced into sites.
+ *
+ * Pages only use the theme contract: colours paper / paper-edge / card / ink /
+ * ink-soft / ink-faint / rule / rule-hard / rust (accent) / ember-lite / ochre / moss,
+ * fonts font-serif (display) / font-sans / font-mono, and the classes .card .tile
+ * .tag .btn-ember .hero-glow table.data .glass .nav-link .arrow-link. No hard-coded
+ * colours anywhere else, so swapping theme.css restyles the whole site.
+ */
+@import "../styles/theme/base.css";
+@import "../styles/theme/theme.css";
+
+/* Site-level helpers. Tokens only. */
+@layer components {
+  .container-page { width: 100%; max-width: 72rem; margin-inline: auto; padding-inline: 1.25rem; }
+  /* Inline text links: ink-coloured text + accent underline. Accent-coloured text is
+     not readable on every theme's paper (comic red on yellow is 3.5:1). */
+  .text-link {
+    text-decoration-line: underline;
+    text-decoration-color: var(--color-rust);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+  .text-link:hover { text-decoration-color: var(--color-ember-lite); }
+}
