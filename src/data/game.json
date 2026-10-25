@@ -177,7 +177,7 @@
     },
     {
       "slug": "thousand-year-rain",
-      "name": "It Rains for 1,000 Years",
+      "name": "Rain for 1,000 Years",
       "tier": null,
       "rarity": "Water",
       "role": "Any map, low ground",
@@ -185,9 +185,9 @@
       "howToGet": "Get to the highest ground immediately and expect it to be submerged anyway — the recorded survival came from staying on top of a structure while the water and the structure both failed around it.",
       "banner": "What if it rained for 1,000 years?",
       "stages": [
-        "The rain starts and the counter begins: a month of rain, then ten, then years.",
-        "Low ground submerges and the map starts losing pieces as structures break off.",
-        "At the end of the count the map is effectively an island; anything that was not high is gone."
+        "The counter starts at MONTH 1 and the HUD reads MONTH 10 within the round: whole neighbourhoods under water and lightning through the endless storm.",
+        "The objective is FIND THE TALLEST BUILDING, NOW — the game tells you height is the answer before the streets flood.",
+        "The counter keeps running toward years while the map loses pieces; what is left at the end is an island."
       ],
       "killSpots": "Low ground at any point, and swimming distance from a structure once the water is up. The water keeps rising slowly enough that players underestimate it.",
       "prep": [
@@ -247,6 +247,31 @@
       ],
       "ifCaught": "Move to the other side of whatever you were hiding behind. The same object is cover or exposure depending on which direction the wind is now coming from.",
       "worstMaps": "Open maps where the only cover has one side — the Golden Gate crossing and Jungle Pyramids.",
+      "sources": 1,
+      "verified": true
+    },
+    {
+      "slug": "planet-flyby",
+      "name": "Planet Flyby",
+      "tier": null,
+      "rarity": "Gravity",
+      "role": "Venice (recorded), any map",
+      "summary": "Another planet passes close enough to lift the map off the ground. Chunks of the city rise toward it and towers start to fall, so the counter-intuitive answer is the recorded prompt: stay down low.",
+      "howToGet": "Stay low and indoors. Everything that gets pulled is what is above ground, so a basement, a low interior or the floor of a structure is the position — climbing is what gets you lifted.",
+      "banner": "What if another planet passed Earth?",
+      "stages": [
+        "The planet appears and the HUD panel reads THE GROUND IS TEARING LOOSE: chunks of the city lifting off toward it, towers starting to fall.",
+        "The objective switches to STAY DOWN LOW — the only scenario in the game where the escape is downward.",
+        "Debris keeps rising for the rest of the round, so anything you climb onto becomes a projectile."
+      ],
+      "killSpots": "Rooftops, upper floors and anything already loose. Players die by climbing for a better view while the ground is being pulled upward.",
+      "prep": [
+        "Get to the lowest interior you can reach before the pull starts.",
+        "Get off any rooftop — height is the hazard here, not the shelter.",
+        "Avoid standing under towers: the recorded stage description is that towers start to fall as the chunks lift."
+      ],
+      "ifCaught": "Get down a level and inside. Running for a taller building is the failure move; the round rewards the only prompt that tells you to go low.",
+      "worstMaps": "Venice (the recorded map) and any map with a lot of vertical structure — Alpine Ski Resort and Jungle Temple Ruins.",
       "sources": 1,
       "verified": true
     },
@@ -502,7 +527,7 @@
     },
     {
       "slug": "solar-flare",
-      "name": "The Largest Solar Flare Ever",
+      "name": "The Greatest Solar Flare",
       "tier": null,
       "rarity": "Cosmic",
       "role": "Any map, rooftops",
@@ -512,9 +537,9 @@
       "verified": true,
       "banner": "What if the largest solar flare ever hits?",
       "stages": [
-        "Radiation fills the air, so the open sky becomes the damage source.",
-        "Electronics die, which strips out anything powered on the map.",
-        "Rooftops melt — the highest ground, the one that saves you in a water round, is where the flare lands."
+        "The city goes dark first — the HUD stage reads THE CITY HAS GONE DARK: the last of the grid has failed and the sky keeps getting brighter.",
+        "The objective is GET INSIDE A BUILDING with a temperature readout climbing (34 °C in the recorded round).",
+        "Rooftops melt while the sky brightens, so the highest ground becomes the first thing lost."
       ],
       "killSpots": "Rooftops and open sky. This is the scenario that punishes the habit built by every water round: climbing first.",
       "prep": [
@@ -529,10 +554,6 @@
   "announced": [
     {
       "name": "Twice as much oxygen",
-      "note": "Banner confirmed, hazard not documented yet."
-    },
-    {
-      "name": "Another planet passes Earth",
       "note": "Banner confirmed, hazard not documented yet."
     },
     {
@@ -590,10 +611,22 @@
       "use": "The deck is the only way across, which makes the crossing itself the hazard during a bomb, toxic air or flare round. Train carriages are the movable cover here."
     },
     {
-      "slug": "jungle-pyramids",
-      "name": "Jungle Pyramids",
-      "note": "Confirmed in creator footage.",
+      "slug": "jungle-temple-ruins",
+      "name": "Jungle Temple Ruins",
+      "note": "Temple-and-jungle map recorded with the solar flare and the every-volcano round. Big pyramid steps give height, thin cover.",
       "use": "Open terrain with long sightlines — good for seeing a tornado track, bad for a bomb or a flare. Height sits on the pyramids and the cover is thin."
+    },
+    {
+      "slug": "tulip-windmill",
+      "name": "Tulip Windmill",
+      "note": "Windmill and field map recorded with the 1,000-year rain. Tall windmill structures are the height the round asks for.",
+      "use": "The windmill itself is the tallest building the rain round is looking for, so it is the right place to be — but the fields around it are the first thing to go under."
+    },
+    {
+      "slug": "venice",
+      "name": "Venice",
+      "note": "Canal city recorded with the planet flyby: water at street level and towers above it.",
+      "use": "Low interiors are the answer on this one — the flyby lifts what is above ground, and the canals leave little dry street to run along."
     }
   ],
   "guide": [
