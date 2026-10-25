@@ -5,8 +5,8 @@
   "templateCommit": "fabf9153e71ea0a6393ce58ba1ef9b855c02e345",
   "createdAt": "2026-10-25T03:29:57.782Z",
   "domain": "what-if-disasters.wiki",
-  "theme": "candy",
-  "themePickedBy": "pick.mjs",
+  "theme": "ember",
+  "themePickedBy": "--theme",
   "themesDir": "game-themes",
   "themesCommit": "6ce2b8635b4fead924de84dc23425ce7639eb98a"
 }

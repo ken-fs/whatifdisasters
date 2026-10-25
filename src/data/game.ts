@@ -22,6 +22,8 @@ export type Entity = {
   verified: boolean;
 };
 export type Video = { id: string; title: string; channel: string };
+export type Announced = { name: string; note: string };
+export type MapEntry = { slug: string; name: string; note: string };
 
 export const LAST_CHECKED: string = raw.lastChecked;
 export const IS_PLACEHOLDER: boolean = raw._placeholder;
@@ -30,6 +32,8 @@ export const expiredCodes = raw.expiredCodes as ExpiredCode[];
 export const redeemSteps: string[] = raw.redeemSteps;
 export const codesFaq: { q: string; a: string }[] = raw.codesFaq;
 export const entities = raw.entities as Entity[];
+export const announced = raw.announced as Announced[];
+export const maps = raw.maps as MapEntry[];
 export const guide: { heading: string; body: string }[] = raw.guide;
 export const videos = raw.videos as Video[];
 export const gaps: string[] = raw.gaps;
@@ -38,6 +42,7 @@ export const gaps: string[] = raw.gaps;
 export const TIERS = ["S", "A", "B", "C", "D"] as const;
 export const byTier = (tier: string | null) => entities.filter((e) => e.tier === tier);
 export const getEntity = (slug: string) => entities.find((e) => e.slug === slug);
+export const getMap = (slug: string) => maps.find((m) => m.slug === slug);
 
 /** "October 2026" for titles — taken from lastChecked so the title never lies. */
 export const MONTH_YEAR = new Date(`${LAST_CHECKED}T00:00:00Z`).toLocaleDateString("en-US", {

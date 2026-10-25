@@ -1,67 +1,204 @@
 {
-  "_readme": "All game facts the pages print. Placeholder content: replace every entry with sourced data, then set _placeholder to false (scripts/check-export.mjs warns while it is true). Unknown facts stay null — the pages render a gap, never a guess.",
-  "_placeholder": true,
-  "lastChecked": "2026-10-11",
-  "codes": [
-    { "code": "EXAMPLE100K", "reward": "500 Gems and 2 Spins", "added": "2026-10-10", "sources": 2 },
-    { "code": "WELCOME", "reward": "250 Gems", "added": "2026-10-01", "sources": 3 },
-    { "code": "UPDATE1", "reward": "1 Lucky Potion", "added": "2026-09-28", "sources": 2 }
-  ],
-  "expiredCodes": [
-    { "code": "RELEASE", "reward": "100 Gems" }
-  ],
-  "redeemSteps": [
-    "Open the game and wait until your character loads in.",
-    "Press the Codes button on the side of the screen.",
-    "Paste a code from this page into the box. Codes are case-sensitive, so copy them instead of typing.",
-    "Press Redeem. The reward shows up in your inventory right away."
-  ],
+  "_readme": "Every fact the pages print comes from here. Unknown stays null - the pages render a gap, never a guess. Hazard wording comes from the in-game 'What if...' banners as recorded in creator footage (Votex, 2026-10-19; VendoPlus via AllThingsHow, 2026-10-20). Survival notes are guidance derived from that hazard behaviour, not developer statements.",
+  "_placeholder": false,
+  "lastChecked": "2026-10-25",
+  "codes": [],
+  "expiredCodes": [],
+  "redeemSteps": [],
   "codesFaq": [
-    { "q": "Why is my code not working?", "a": "Most of the time it was typed by hand and one letter is off. Codes are case-sensitive, so use the Copy button. If it still fails, the code has probably expired." },
-    { "q": "How often do new codes come out?", "a": "Usually with each update or when the game hits a likes or visits milestone. This page is re-checked whenever the game updates." }
+    {
+      "q": "Does What If Disasters have codes?",
+      "a": "Not yet. Every round we re-check the lobby, the group shout and the developer's socials; nothing has been released as of 25 October 2026. The game's lobby buttons are SHOP, MISSIONS and INDEX - no codes button is documented."
+    },
+    {
+      "q": "Why do people search for What If Disasters codes?",
+      "a": "Because almost every Roblox game has them. This one hands out rewards through missions, crates and credits instead. If the developer adds a code box, the first working code goes on this page the same day it is confirmed by two sources."
+    },
+    {
+      "q": "What can I get for free right now?",
+      "a": "Nothing that needs a code - credits come from surviving rounds, and the lobby crates take credits. The Robux game passes are a paid shortcut, not a requirement."
+    },
+    {
+      "q": "How often is this page checked?",
+      "a": "On every game update. The page footer shows the date of the last check, and an empty list means the game still has no codes."
+    }
   ],
   "entities": [
     {
-      "slug": "example-unit-a",
-      "name": "Example Unit A",
-      "tier": "S",
-      "rarity": "Mythic",
-      "role": "Damage",
-      "summary": "Placeholder entry. Say in one or two plain sentences what this unit is good at and who should use it.",
-      "howToGet": "Summon banner (placeholder)",
-      "sources": 2,
-      "verified": true
-    },
-    {
-      "slug": "example-unit-b",
-      "name": "Example Unit B",
-      "tier": "A",
-      "rarity": "Legendary",
-      "role": "Support",
-      "summary": "Placeholder entry. A second unit so the tier list and the list page have something to group.",
-      "howToGet": "Quest reward (placeholder)",
-      "sources": 2,
-      "verified": true
-    },
-    {
-      "slug": "example-unit-c",
-      "name": "Example Unit C",
+      "slug": "moon-falls",
+      "name": "The Moon Falls",
       "tier": null,
-      "rarity": null,
-      "role": null,
-      "summary": "Placeholder for an entity that is real but not yet documented. The page shows the gap instead of inventing numbers.",
-      "howToGet": null,
+      "rarity": "Cosmic",
+      "role": "Any map, open sky",
+      "summary": "The moon drops toward Earth in stages. The sea first surges in and out, burning chunks fall from the sky, and gravity weakens until loose objects and players start lifting off the ground.",
+      "howToGet": "Get indoors before the surge reaches the shoreline and stay under a roof while debris falls. Sitting out the whole scenario in the open is what kills most rounds of this one.",
+      "sources": 3,
+      "verified": true
+    },
+    {
+      "slug": "sun-disappears",
+      "name": "The Sun Disappears",
+      "tier": null,
+      "rarity": "Cosmic",
+      "role": "Any map, every open area",
+      "summary": "A permanent deep freeze sets in while the power grid fails. The map goes dark and cold rather than being torn apart, so the round is lost to exposure in the open rather than to one big hit.",
+      "howToGet": "Treat it as a shelter round: find an interior and stay in it for the full timer. Running between buildings to loot is what gets players caught outside when the freeze deepens.",
+      "sources": 2,
+      "verified": true
+    },
+    {
+      "slug": "mega-tsunami",
+      "name": "A 500 m Mega Tsunami",
+      "tier": null,
+      "rarity": "Water",
+      "role": "Coastal maps, low ground",
+      "summary": "A wave that grows as it approaches and drags players off the coast. The water arrives later than the warning does, so the 30-second head start is the entire survival window.",
+      "howToGet": "Climb first and loot never. Second floors, roofs and hillside ledges are the only ground that stays dry; anything at street level gets swept.",
+      "sources": 3,
+      "verified": true
+    },
+    {
+      "slug": "ocean-rolls-back",
+      "name": "The Ocean Rolls Back",
+      "tier": null,
+      "rarity": "Water",
+      "role": "Coastal maps, shoreline",
+      "summary": "The sea pulls away from the coast before it comes back. The dry seabed is the bait: the water returns faster than anyone can cross it.",
+      "howToGet": "When the shoreline empties, go up instead of out to look. Walking onto the seabed is the mistake this scenario is built around.",
+      "sources": 2,
+      "verified": true
+    },
+    {
+      "slug": "floor-becomes-lava",
+      "name": "The Floor Becomes Lava",
+      "tier": null,
+      "rarity": "Ground",
+      "role": "Any map, ground level",
+      "summary": "Touching the ground burns, and the lava keeps rising as the round goes on. Height is the only currency: whatever you are standing on now will be submerged first.",
+      "howToGet": "Start moving upward before the first burn tick, and keep switching to the next surface up. Standing still on a roof only works until the level reaches it.",
+      "sources": 2,
+      "verified": true
+    },
+    {
+      "slug": "zombie-outbreak",
+      "name": "A Zombie Outbreak",
+      "tier": null,
+      "rarity": "Biological",
+      "role": "Any map, indoors and streets",
+      "summary": "Zombies smash through doors, players who die get back up infected, and fast red-glowing crawlers join later in the round. The threat is other players turning, not just the first wave.",
+      "howToGet": "Keep a door between you and the street, and never stand next to someone who is about to go down - the infected turn fast. Open ground with a group is worse than a closed room alone.",
+      "sources": 2,
+      "verified": true
+    },
+    {
+      "slug": "earth-tilts",
+      "name": "Earth Tilts 90°",
+      "tier": null,
+      "rarity": "Gravity",
+      "role": "Any map, whole terrain",
+      "summary": "Walls become floors and the sea drops onto the coasts. Anything that was a vertical surface is now walkable, and everything that was standing falls with the map.",
+      "howToGet": "Expect to be thrown: stay away from ledges, glass and anything loose while the tilt happens. Once the world settles, walk the old walls like ordinary ground.",
       "sources": 1,
-      "verified": false
+      "verified": true
+    },
+    {
+      "slug": "every-volcano-erupts",
+      "name": "Every Volcano Erupts at Once",
+      "tier": null,
+      "rarity": "Ground",
+      "role": "Any map, sky and ground",
+      "summary": "Lava rocks rain down and the ground splits open. There is no safe shoreline or corner: the damage arrives vertically first, then from below.",
+      "howToGet": "Shelter under solid cover beats running into the open, where falling rocks are unavoidable. Avoid standing over cracked ground once the splits start.",
+      "sources": 1,
+      "verified": true
+    },
+    {
+      "slug": "f5-tornado",
+      "name": "An F5 Tornado",
+      "tier": null,
+      "rarity": "Wind",
+      "role": "Any map, streets",
+      "summary": "The tornado destroys the buildings it passes through, so the map's cover is removed ahead of the damage rather than around it.",
+      "howToGet": "Watch the direction it is tracking and stay behind it - a building is only protection until the funnel reaches it. Never cross open ground in front of it.",
+      "sources": 2,
+      "verified": true
+    },
+    {
+      "slug": "all-ice-melts",
+      "name": "All Ice on Earth Melts",
+      "tier": null,
+      "rarity": "Water",
+      "role": "Coastal and low maps",
+      "summary": "Sea level rises and the heat scorches. The water takes the low ground first while the temperature works on everyone still outside.",
+      "howToGet": "Go up and stay dry, the same as a tsunami round - this one is slower, so there is time to get there properly.",
+      "sources": 1,
+      "verified": true
+    },
+    {
+      "slug": "solar-flare",
+      "name": "The Largest Solar Flare Ever",
+      "tier": null,
+      "rarity": "Cosmic",
+      "role": "Any map, rooftops",
+      "summary": "Radiation fills the air, electronics die and rooftops melt. The roof that saved you in a tsunami is the wrong place here, because the top of the map is where the flare lands.",
+      "howToGet": "Get off the roof and into a building. Where the tsunami answer is up, this one is down and indoors.",
+      "sources": 1,
+      "verified": true
     }
   ],
-  "guide": [
-    { "heading": "Your first ten minutes", "body": "Placeholder. Tell a new player what to do first, in the order they will actually do it." },
-    { "heading": "What to spend currency on", "body": "Placeholder. Point to the one or two things that matter early, and say what to skip." },
-    { "heading": "When to reroll", "body": "Placeholder. Keep it short and honest: if nobody knows the odds, say so." }
+  "announced": [
+    { "name": "Twice as much oxygen", "note": "Banner confirmed, hazard not documented yet." },
+    { "name": "Earth enters a planet-sized storm", "note": "Banner confirmed in creator footage; the storm is visible on the skyline before it reaches the map." },
+    { "name": "Earth spins backwards", "note": "Banner confirmed, hazard not documented yet." },
+    { "name": "Another planet passes Earth", "note": "Banner confirmed, hazard not documented yet." },
+    { "name": "Toxic air", "note": "Banner confirmed, hazard not documented yet." },
+    { "name": "A month of rain falls every few minutes", "note": "Banner confirmed, hazard not documented yet." },
+    { "name": "Earth loses its atmosphere", "note": "Banner confirmed, hazard not documented yet." },
+    { "name": "The ocean vanishes", "note": "Banner confirmed, ends in a salt storm." },
+    { "name": "The biggest bomb ever detonated", "note": "Banner confirmed, hazard not documented yet." },
+    { "name": "A city-killing asteroid", "note": "Banner confirmed, hazard not documented yet." },
+    { "name": "An earthquake sequence", "note": "Banner confirmed: foreshock, major quake, then aftershocks." },
+    { "name": "THE STORM WILL NEVER END", "note": "Banner confirmed, described in-game as a tornado that never stops." }
   ],
-  "videos": [],
+  "maps": [
+    { "slug": "suburban-neighborhood", "name": "Suburban Neighborhood", "note": "Street-level houses, garages that open with the interact prompt and drivable cars. Vehicles hold several players at once, but a ride is never guaranteed." },
+    { "slug": "thrill-park", "name": "Thrill Park", "note": "Themed park map with landmarks that make it easy to recognise before the banner fires." },
+    { "slug": "alpine-ski-resort", "name": "Alpine Ski Resort", "note": "Confirmed in creator footage." },
+    { "slug": "coastal-resort", "name": "Coastal Resort", "note": "Confirmed in creator footage; low shoreline makes water scenarios harder." },
+    { "slug": "harbor-port", "name": "Harbor Port", "note": "Confirmed in creator footage." },
+    { "slug": "golden-gate-crossing", "name": "Golden Gate crossing", "note": "Bridge-style map seen in footage; the deck is the only way across." },
+    { "slug": "jungle-pyramids", "name": "Jungle Pyramids", "note": "Confirmed in creator footage." }
+  ],
+  "guide": [
+    {
+      "heading": "The round loop, in order",
+      "body": "Lobby wait shows a NEXT DISASTER countdown next to the shop, settings, crates and leaderboards. Stand on the central pad before that timer hits zero - players on the pad are the ones who get loaded. Loading prints ENTERING SIMULATION, the map spawns you with DISASTER IN 00:30, and the disaster itself is only named when that countdown ends."
+    },
+    {
+      "heading": "Use the 30 seconds, don't spend it",
+      "body": "Warm-up time is free movement, not free loot. On Suburban Neighborhood you can open garages and drive cars, and vehicles carry several players - but a ride is not guaranteed. The habit that survives rounds is using the head start to be somewhere defensible before the banner names the hazard."
+    },
+    {
+      "heading": "Read the banner, not the map",
+      "body": "Disaster and map are chosen separately: the same map can host different scenarios, and the 'What if...?' banner is the only thing that tells you what is coming. Twenty-two scenarios have been recorded in-game, from a moon fall to a solar flare, and each one rewards a different position - up for water, indoors for the sun and the flare."
+    },
+    {
+      "heading": "What credits are for",
+      "body": "Surviving pays credits, and credits buy equipment in the lobby shop. Crates are the other sink. Game passes are the Robux shortcut and are not required to survive rounds - several recorded rounds were won with starter equipment by moving early."
+    },
+    {
+      "heading": "If you die",
+      "body": "Dead players spectate until the results banner, which reads X OF Y SURVIVED and lists survivors and casualties. Use that time on the next map instead of the current one: the disaster has already been decided."
+    }
+  ],
+  "videos": [
+    { "id": "UY4GKHY17F8", "title": "ROBLOX WHAT IF DISASTERS...", "channel": "Votex" },
+    { "id": "Mw8L-ulGcyY", "title": "Roblox WHAT IF DISASTERS...?", "channel": "YouTube" }
+  ],
   "gaps": [
-    "Placeholder: list what nobody has published yet (drop rates, exact stats). Readers trust a site that says what it does not know."
+    "The developer advertises more scenarios than the 22 recorded here; the exact current count has not been published as a list.",
+    "Only 7 of the advertised maps have been named in footage.",
+    "No codes exist as of 2026-10-25 - the lobby has SHOP, MISSIONS and INDEX, no code box.",
+    "The lobby INDEX button may be an in-game disaster index; its contents are still undocumented."
   ]
 }

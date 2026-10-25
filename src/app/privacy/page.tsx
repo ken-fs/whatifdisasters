@@ -16,7 +16,8 @@ export default function PrivacyPage() {
       <h1 className="mt-6 text-4xl">Privacy</h1>
       <div className="mt-6 grid gap-5 text-ink-soft">
         <p>
-          {SITE_NAME} ({SITE_URL}) has no accounts and no forms. We don&apos;t collect your name, email or anything else you type.
+          {SITE_NAME} ({SITE_URL}) has no accounts, no forms and no newsletter. We don&apos;t collect your name, email or anything else you
+          type. The only thing stored in your browser is your analytics choice.
         </p>
         <h2 className="mt-4 text-xl text-ink">Analytics</h2>
         <p>

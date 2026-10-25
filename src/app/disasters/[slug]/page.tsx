@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: RouteParams): Promise<Metadat
   if (!e) return {};
   return {
     title: { absolute: `${e.name} — ${GAME.name} wiki` },
-    description: `${e.name} in ${GAME.name}: ${e.rarity ? `${e.rarity} rarity, ` : ""}${e.howToGet ? `how to get it, ` : ""}what it's good at and where it ranks. Checked ${LAST_CHECKED}.`.slice(0, 160),
+    description: `${e.name} in ${GAME.name}: what the banner announces, what the hazard does to the map, and where to stand to survive it. Checked ${LAST_CHECKED}.`.slice(0, 160),
     alternates: { canonical: entityHref(e.slug) },
   };
 }
@@ -31,10 +31,9 @@ export default async function EntityPage({ params }: RouteParams) {
   if (!e) notFound();
   const others = entities.filter((x) => x.slug !== e.slug).slice(0, 6);
   const facts: [string, string | null][] = [
-    ["Tier", e.tier],
-    ["Rarity", e.rarity],
-    ["Role", e.role],
-    ["How to get", e.howToGet],
+    ["Hazard type", e.rarity],
+    ["Where it hits", e.role],
+    ["How to survive", e.howToGet],
   ];
 
   return (
@@ -42,7 +41,7 @@ export default async function EntityPage({ params }: RouteParams) {
       <Breadcrumbs items={[{ name: cap(ENTITY.plural), href: entityHref() }, { name: e.name, href: entityHref(e.slug) }]} />
       <header className="pt-6 pb-10">
         <div className="flex flex-wrap items-center gap-2">
-          {e.tier && <span className="tag">Tier {e.tier}</span>}
+          {e.rarity && <span className="tag">{e.rarity}</span>}
           <span className="text-xs text-ink-faint">
             Checked {LAST_CHECKED} · {e.sources} source{e.sources === 1 ? "" : "s"}
           </span>
@@ -73,8 +72,8 @@ export default async function EntityPage({ params }: RouteParams) {
       </section>
 
       <p className="mt-10 text-sm text-ink-soft">
-        Need more currency for it? Grab the <Link href="/codes/" className="text-link">working codes</Link> first, or check where it sits on
-        the <Link href="/tier-list/" className="text-link">tier list</Link>.
+        Surviving is half preparation and half knowing the map — see the <Link href="/maps/" className="text-link">map list</Link> and the{" "}
+        <Link href="/guide/" className="text-link">round guide</Link> for the 30-second head start.
       </p>
 
       {others.length > 0 && (

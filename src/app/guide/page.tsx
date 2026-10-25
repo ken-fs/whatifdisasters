@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { guide, LAST_CHECKED, videos } from "@/data/game";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { VideoEmbed } from "@/components/video-embed";
@@ -20,7 +19,8 @@ export default function GuidePage() {
         <p className="tag">Updated {LAST_CHECKED}</p>
         <h1 className="mt-4 text-4xl sm:text-5xl">{GAME.name} beginner guide</h1>
         <p className="mt-4 max-w-[60ch] text-ink-soft">
-          The short version. Start by redeeming the <Link href="/codes/" className="text-link">free codes</Link>, then work through this.
+          The short version of a round, in the order it happens. There are no codes to redeem here - rewards come from the shop and
+          crates you pay for with credits.
         </p>
       </header>
       <div className="grid max-w-3xl gap-10">

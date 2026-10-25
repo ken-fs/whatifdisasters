@@ -15,7 +15,7 @@ export default function TermsPage() {
       <Breadcrumbs items={[{ name: "Terms", href: "/terms/" }]} />
       <h1 className="mt-6 text-4xl">Terms</h1>
       <div className="mt-6 grid gap-5 text-ink-soft">
-        <p>{SITE_NAME} is a free fan site. Use it as a guide, not a guarantee: codes expire and games change between our checks.</p>
+        <p>{SITE_NAME} is a free fan site. Use it as a guide, not a guarantee: the game changes between our checks, and a scenario can behave differently after an update.</p>
         <p>
           {GAME.name}, its art and its names belong to {GAME.developer || "the developer"}. {PLATFORM_NAME} is a trademark of its owner. We
           aren&apos;t affiliated with either. If you own something shown here and want it changed or removed, email{" "}

@@ -10,8 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes: [string, number][] = [
     ["/", 1],
     ["/codes/", 0.9],
-    ["/tier-list/", 0.8],
     [entityHref(), 0.8],
+    ["/maps/", 0.8],
     ["/guide/", 0.7],
     ["/about/", 0.3],
     ["/privacy/", 0.1],

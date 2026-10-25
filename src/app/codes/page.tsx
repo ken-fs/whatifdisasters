@@ -9,8 +9,16 @@ import { LEADERBOARD, RECTANGLE } from "@/lib/ads";
 import { GAME, ENTITY } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: `${GAME.name} codes (${MONTH_YEAR}): ${codes.length} working codes` },
-  description: `All ${codes.length} working ${GAME.name} codes with the exact reward for each, how to redeem them, and the ones that have expired. Checked ${LAST_CHECKED}.`,
+  title: {
+    absolute:
+      codes.length > 0
+        ? `${GAME.name} codes (${MONTH_YEAR}): ${codes.length} working codes`
+        : `${GAME.name} codes (${MONTH_YEAR}): is there a code box yet?`,
+  },
+  description:
+    codes.length > 0
+      ? `All ${codes.length} working ${GAME.name} codes with the exact reward for each, how to redeem them, and the ones that have expired. Checked ${LAST_CHECKED}.`
+      : `${GAME.name} has no codes yet - no code box exists in the lobby as of ${LAST_CHECKED}. Here is what the game gives you instead, and how this page checks for new codes.`,
   alternates: { canonical: "/codes/" },
 };
 
@@ -102,7 +110,7 @@ export default function CodesPage() {
       </section>
 
       <p className="mt-12 text-sm text-ink-soft">
-        Got your rewards? See <Link href="/tier-list/" className="text-link">the tier list</Link> before you spend them, or read the{" "}
+        Got your rewards? Surviving is the whole loop — start with the <Link href="/guide/" className="text-link">round guide</Link>, then read the{" "}
         <Link href="/guide/" className="text-link">beginner guide</Link>. Every {ENTITY.singular} has its own page too.
       </p>
     </article>

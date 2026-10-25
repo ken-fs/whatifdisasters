@@ -1,29 +1,21 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { codes, entities, LAST_CHECKED, MONTH_YEAR } from "@/data/game";
-import { CopyCode } from "@/components/copy-code";
+import { announced, codes, entities, maps, LAST_CHECKED } from "@/data/game";
 import { AdsterraBanner } from "@/components/adsterra-banner";
 import { RECTANGLE } from "@/lib/ads";
-import { ENTITY, GAME, cap, entityHref } from "@/lib/site";
+import { ENTITY, GAME, entityHref } from "@/lib/site";
 import { HERO_SHOT } from "@/lib/media";
 
 // The homepage owns the brand and "<game> wiki" queries; /codes/ owns "<game> codes". 2026-10-13 SERP study
 // (Ship/research/GAME-WIKI-STRUCTURE-2026-10.md): every small-game hub ranking top 5 for "<game> wiki" opens its title and
-// H1 with "<Game> Wiki", while a codes-led homepage splits the codes cluster with /codes/ (petsuniverse: homepage stuck at
-// #8, /codes/ never ranked). A short live-codes block stays here and links to /codes/ with the query as anchor text.
+// H1 with "<Game> Wiki". The codes page exists but the game has no codes yet, so the homepage links it as a card instead of
+// leading with it (structure rule B8: the homepage must not compete with /codes/ for the codes cluster).
 export const metadata: Metadata = {
-  title: { absolute: `${GAME.name} Wiki: Codes, Tier List & Guides` },
+  title: { absolute: `${GAME.name} Wiki: Every Disaster and How to Survive It` },
   alternates: { canonical: "/" },
 };
 
 export default function HomePage() {
-  const sections = [
-    { href: "/codes/", title: "Codes", body: `All ${codes.length} working codes and what each one gives you.` },
-    { href: "/tier-list/", title: "Tier list", body: `Which ${ENTITY.plural} are worth your time, ranked.` },
-    { href: entityHref(), title: cap(ENTITY.plural), body: `One page per ${ENTITY.singular}: how to get it and what it does.` },
-    { href: "/guide/", title: "Beginner guide", body: "What to do first, and what to skip." },
-  ];
-
   return (
     <>
       <section className="relative isolate overflow-x-clip">
@@ -35,24 +27,22 @@ export default function HomePage() {
         <div className={`container-page pt-20 pb-14 ${HERO_SHOT ? "lg:grid lg:grid-cols-[1.1fr_1fr] lg:items-center lg:gap-10" : ""}`}>
           <div>
             <p className="tag">Updated {LAST_CHECKED}</p>
-            <h1 className="mt-5 max-w-[16ch] text-5xl sm:text-6xl">
+            <h1 className="mt-5 max-w-[18ch] text-5xl sm:text-6xl">
               {GAME.name} <span className="text-rust">Wiki</span>
             </h1>
             <p className="mt-6 max-w-[56ch] text-lg text-ink-soft">
-              A page for every {ENTITY.singular}, a tier list, a beginner guide and the working codes for {MONTH_YEAR}. Every code is
-              checked against at least two sources, so you don&apos;t waste time on dead ones.
+              Every scenario the round banner can announce, what the hazard actually does to the map, and where to stand when it
+              starts. One page per disaster, plus the maps they land on and the round loop they sit in.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
-              <Link href="/codes/" className="btn-ember">
-                All {codes.length} {GAME.name} codes
+              <Link href={entityHref()} className="btn-ember">
+                All {entities.length} documented disasters
               </Link>
-              <Link href="/tier-list/" className="arrow-link text-sm font-semibold text-ink">
-                Tier list <span className="arrow">→</span>
+              <Link href="/maps/" className="arrow-link text-sm font-semibold text-ink">
+                Maps <span className="arrow">→</span>
               </Link>
             </div>
           </div>
-          {/* Official game art (developer-uploaded, pulled by scripts/fetch-media.mjs).
-              LCP element → eager + high priority. Absent files → this block is not rendered. */}
           {HERO_SHOT && (
             <figure className="mt-10 lg:mt-0">
               <img
@@ -72,46 +62,18 @@ export default function HomePage() {
       </section>
 
       <section className="container-page grid gap-4 sm:grid-cols-3">
-        <Stat value={codes.length} label="working codes" />
-        <Stat value={entities.length} label={`${ENTITY.plural} covered`} />
-        <Stat value={LAST_CHECKED} label="last checked" />
-      </section>
-
-      <section className="container-page mt-16">
-        <h2 className="text-2xl">Newest codes</h2>
-        <div className="tile mt-5 overflow-x-auto p-5">
-          <table className="data">
-            <thead>
-              <tr>
-                <th>Code</th>
-                <th>Reward</th>
-                <th>
-                  <span className="sr-only">Copy</span>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {codes.slice(0, 3).map((c) => (
-                <tr key={c.code}>
-                  <td>
-                    <code className="font-semibold">{c.code}</code>
-                  </td>
-                  <td className="text-ink-soft">{c.reward}</td>
-                  <td className="text-right">
-                    <CopyCode code={c.code} />
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <Link href="/codes/" className="arrow-link mt-4 inline-block text-sm font-semibold">
-          All {GAME.name} codes and how to redeem <span className="arrow">→</span>
-        </Link>
+        <Stat value={entities.length} label="disasters documented" />
+        <Stat value={announced.length} label="announced, not yet documented" />
+        <Stat value={maps.length} label="maps named so far" />
       </section>
 
       <section className="container-page mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {sections.map((s) => (
+        {[
+          { href: entityHref(), title: "Disasters", body: "What each banner means and how the hazard plays out." },
+          { href: "/maps/", title: "Maps", body: "The locations rounds are set in, and what cover each one offers." },
+          { href: "/guide/", title: "Round guide", body: "The lobby countdown, the 30-second head start and the results banner." },
+          { href: "/codes/", title: "Codes", body: codes.length > 0 ? `${codes.length} working codes.` : "The game has no code box yet — here is how we check." },
+        ].map((s) => (
           <Link key={s.href} href={s.href} className="card block p-6">
             <h3 className="font-serif text-lg">{s.title}</h3>
             <p className="mt-2 text-sm text-ink-soft">{s.body}</p>
@@ -125,9 +87,7 @@ export default function HomePage() {
       {entities.length > 0 && (
         <section className="container-page mt-16">
           <div className="flex items-baseline justify-between gap-4">
-            <h2 className="text-2xl">
-              Every {GAME.name} {ENTITY.singular}
-            </h2>
+            <h2 className="text-2xl">Documented disasters</h2>
             <Link href={entityHref()} className="arrow-link text-sm font-semibold">
               All {entities.length} {ENTITY.plural} <span className="arrow">→</span>
             </Link>
@@ -145,6 +105,40 @@ export default function HomePage() {
           </ul>
         </section>
       )}
+
+      <section className="container-page mt-16">
+        <h2 className="text-2xl">Announced, not documented yet</h2>
+        <p className="mt-3 max-w-[70ch] text-ink-soft">
+          These banners have shown up in rounds, but the hazard itself has not been recorded clearly enough to write a page
+          about. They stay listed here until we can describe what actually happens.
+        </p>
+        <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+          {announced.map((a) => (
+            <li key={a.name} className="tile p-4">
+              <p className="font-medium">{a.name}</p>
+              <p className="mt-1 text-sm text-ink-soft">{a.note}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="container-page mt-16">
+        <div className="flex items-baseline justify-between gap-4">
+          <h2 className="text-2xl">Maps</h2>
+          <Link href="/maps/" className="arrow-link text-sm font-semibold">
+            All maps <span className="arrow">→</span>
+          </Link>
+        </div>
+        <ul className="mt-5 flex flex-wrap gap-2">
+          {maps.map((m) => (
+            <li key={m.slug}>
+              <Link href={`/maps/#${m.slug}`} className="card inline-block px-3 py-1.5 text-sm font-medium">
+                {m.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
 
       <AdsterraBanner slot={RECTANGLE} className="mt-16" />
     </>

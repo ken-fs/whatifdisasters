@@ -6,7 +6,7 @@ import { GAME_ICON } from "@/lib/media";
 
 export const metadata: Metadata = {
   title: { absolute: `About — ${SITE_NAME}` },
-  description: `How ${SITE_NAME} checks ${GAME.name} codes and data: what counts as a source, when something goes live, and what is still unknown.`,
+  description: `How ${SITE_NAME} checks ${GAME.name} facts: what counts as a source, when a disaster page goes live, and what is still unknown.`,
   alternates: { canonical: "/about/" },
 };
 
@@ -21,9 +21,10 @@ export default function AboutPage() {
           {PLATFORM_NAME}.
         </p>
         <p>
-          A code goes on the codes page once at least two independent sources list it with the same reward. Game facts come from the game
-          itself, the official {PLATFORM_NAME} page and creator videos. If we can&apos;t confirm something, the page says so instead of
-          guessing.
+          A disaster page goes live once the &quot;What if...?&quot; banner text is recorded and the hazard itself can be described from
+          footage - two independent recordings, or one recording plus the official game page. Survival notes are written from what the
+          hazard does to the map, not from developer statements, and are labelled that way. If we can&apos;t confirm something, the page
+          says so instead of guessing. The game currently has no codes, so the codes page says that plainly instead of inventing a list.
         </p>
         <p>Last full check: {LAST_CHECKED}.</p>
         {GAME_ICON && (

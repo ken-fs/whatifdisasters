@@ -4,18 +4,18 @@
   "shortName": "What If Disasters",
   "domain": "what-if-disasters.wiki",
   "contactEmail": "hello@what-if-disasters.wiki",
-  "description": "Working What If Disasters codes with the exact reward for each, a tier list, a page for every unit and a short beginner guide. Fan-made, every number has a source.",
+  "description": "Every What If Disasters scenario documented: what the 'What if...?' banner announces, what the hazard does to the map, and where to stand to survive it. Fan-made, sources listed on every page.",
   "game": {
     "name": "What If Disasters",
     "platform": "roblox",
     "official": "https://www.roblox.com/games/109440485612336/what-if-disasters",
-    "developer": "",
+    "developer": "random named group i hvent named yet",
     "community": ""
   },
   "entity": {
-    "path": "units",
-    "singular": "unit",
-    "plural": "units"
+    "path": "disasters",
+    "singular": "disaster",
+    "plural": "disasters"
   },
   "gaId": ""
 }
