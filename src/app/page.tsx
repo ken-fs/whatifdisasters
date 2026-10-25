@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  const withImages = entities.filter((e) => e.image).slice(0, 8);
+  const withImages = entities.filter((e) => e.image).slice(0, 12);
 
   return (
     <>
