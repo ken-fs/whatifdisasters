@@ -24,12 +24,15 @@ export type Entity = {
   prep?: string[];
   ifCaught?: string;
   worstMaps?: string;
+  image?: string;
+  imageCredit?: string;
+  hud?: string;
   sources: number;
   verified: boolean;
 };
 export type Video = { id: string; title: string; channel: string };
 export type Announced = { name: string; note: string };
-export type MapEntry = { slug: string; name: string; note: string; use?: string };
+export type MapEntry = { slug: string; name: string; note: string; use?: string; image?: string; imageCredit?: string };
 
 export const LAST_CHECKED: string = raw.lastChecked;
 export const IS_PLACEHOLDER: boolean = raw._placeholder;
@@ -40,6 +43,7 @@ export const codesFaq: { q: string; a: string }[] = raw.codesFaq;
 export const entities = raw.entities as Entity[];
 export const announced = raw.announced as Announced[];
 export const maps = raw.maps as MapEntry[];
+export const mediaCredits = raw.mediaCredits as { channel: string; video: string; title: string }[];
 export const guide: { heading: string; body: string }[] = raw.guide;
 export const videos = raw.videos as Video[];
 export const gaps: string[] = raw.gaps;

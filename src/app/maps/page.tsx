@@ -29,6 +29,17 @@ export default function MapsPage() {
         {maps.map((m) => (
           <div key={m.slug} id={m.slug} className="tile p-5">
             <h2 className="font-serif text-xl">{m.name}</h2>
+            {m.image && (
+              <img
+                src={m.image}
+                alt={`${m.name} in ${GAME.name}`}
+                width={1280}
+                height={720}
+                loading="lazy"
+                decoding="async"
+                className="mt-3 w-full rounded-xl border border-line"
+              />
+            )}
             <p className="mt-2 text-sm text-ink-soft">{m.note}</p>
             {"use" in m && <p className="mt-3 text-sm text-ink-soft"><strong className="text-ink">How to use it:</strong> {(m as { use?: string }).use}</p>}
           </div>

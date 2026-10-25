@@ -50,6 +50,23 @@ export default async function EntityPage({ params }: RouteParams) {
         <p className="mt-4 max-w-[60ch] text-lg text-ink-soft">{e.summary}</p>
       </header>
 
+      {e.image && (
+        <figure className="mb-10 max-w-3xl">
+          <img
+            src={e.image}
+            alt={`${e.name} in ${GAME.name}`}
+            width={1280}
+            height={720}
+            loading="eager"
+            decoding="async"
+            className="w-full rounded-2xl border border-line"
+          />
+          <figcaption className="mt-2 text-xs text-ink-faint">
+            In-game screenshot from a recorded round{e.imageCredit ? ` (${e.imageCredit})` : ""}. Game art belongs to the developer.
+          </figcaption>
+        </figure>
+      )}
+
       <section className="tile max-w-2xl p-5">
         <table className="data">
           <tbody>
@@ -93,6 +110,11 @@ export default async function EntityPage({ params }: RouteParams) {
           {e.killSpots && (
             <p className="mt-5 text-ink-soft">
               <strong className="text-ink">Where it kills you:</strong> {e.killSpots}
+            </p>
+          )}
+          {"hud" in e && (e as { hud?: string }).hud && (
+            <p className="mt-3 text-ink-soft">
+              <strong className="text-ink">What the HUD shows:</strong> {(e as { hud?: string }).hud}
             </p>
           )}
         </section>

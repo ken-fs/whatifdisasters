@@ -16,6 +16,8 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
+  const withImages = entities.filter((e) => e.image).slice(0, 8);
+
   return (
     <>
       <section className="relative isolate overflow-x-clip">
@@ -104,6 +106,31 @@ export default function HomePage() {
                 </li>
               ))}
           </ul>
+        </section>
+      )}
+
+      {withImages.length > 0 && (
+        <section className="container-page mt-16">
+          <div className="flex items-baseline justify-between gap-4">
+            <h2 className="text-2xl">What the rounds look like</h2>
+            <span className="text-xs text-ink-faint">In-game screenshots from recorded sessions</span>
+          </div>
+          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {withImages.map((e) => (
+              <Link key={e.slug} href={entityHref(e.slug)} className="card block overflow-hidden">
+                <img
+                  src={e.image}
+                  alt={`${e.name} in ${GAME.name}`}
+                  width={1280}
+                  height={720}
+                  loading="lazy"
+                  decoding="async"
+                  className="aspect-video w-full object-cover"
+                />
+                <p className="px-3 py-2 text-sm font-medium">{e.name}</p>
+              </Link>
+            ))}
+          </div>
         </section>
       )}
 

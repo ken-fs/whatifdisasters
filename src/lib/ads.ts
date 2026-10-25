@@ -10,10 +10,20 @@
 export type AdSlot = { key: string; width: number; height: number; src: string };
 
 /** 728×90 leaderboard. Desktop only — it overflows phones. */
-export const LEADERBOARD: AdSlot = { key: "", width: 728, height: 90, src: "" };
+export const LEADERBOARD: AdSlot = {
+  key: "acfce4033929646e9d3f80f355fd29e4",
+  width: 728,
+  height: 90,
+  src: "https://bauval.org/22/acfce4033929646e9d3f80f355fd29e4",
+};
 
 /** 300×250 rectangle. Fits every viewport. */
-export const RECTANGLE: AdSlot = { key: "", width: 300, height: 250, src: "" };
+export const RECTANGLE: AdSlot = {
+  key: "7be178a63b0cb728fa80be49bc9da58c",
+  width: 300,
+  height: 250,
+  src: "https://bauval.org/22/7be178a63b0cb728fa80be49bc9da58c",
+};
 
 /** Adsterra Social Bar script URL (site-wide sticky bar, their highest-CPM format). Empty string = off. */
 export const SOCIAL_BAR_SRC = "";

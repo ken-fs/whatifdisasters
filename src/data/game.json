@@ -48,7 +48,10 @@
         "Do not stay in the street to watch the distance readout fall. The water arrives while you are reading it."
       ],
       "ifCaught": "Move inland and under a roof in the same run — stopping to watch the wave from a rooftop puts you back under the debris. If you are already lifting off the ground, get to a wall and stay against it.",
-      "worstMaps": "Coastal Resort and Harbor Port — the surge phase reaches further inland and the low decks offer no roof cover."
+      "worstMaps": "Coastal Resort and Harbor Port — the surge phase reaches further inland and the low decks offer no roof cover.",
+      "image": "/media/dis-moon-falls.jpg",
+      "imageCredit": "CrabbyOnRoblox",
+      "hud": "The distance readout falls from DISTANCE TO THE MOON: 310,000 KM toward 8,402 KM as the round runs, and the stage text names what is coming rather than what is happening."
     },
     {
       "slug": "sun-disappears",
@@ -123,7 +126,10 @@
       "ifCaught": "Move between buildings in short runs and hug the wall on the way. Crossing the open in one go is the mistake that ends rounds here.",
       "worstMaps": "Thrill Park — the map this scenario was recorded on, with long open walkways between structures.",
       "sources": 2,
-      "verified": true
+      "verified": true,
+      "image": "/media/dis-mega-storm.jpg",
+      "imageCredit": "CrabbyOnRoblox",
+      "hud": "The storm readout counts strikes per minute — 240 PER MINUTE in the recorded round, with the stage text warning that anything stood still gets struck too."
     },
     {
       "slug": "earth-froze",
@@ -173,7 +179,10 @@
       "ifCaught": "Run for the nearest interior with intact glass and close the door behind you. If the windows in your building are already gone, move to another one before the burning stage.",
       "worstMaps": "The Golden Gate crossing has almost no interior, and the deck is fully exposed.",
       "sources": 1,
-      "verified": true
+      "verified": true,
+      "image": "/media/dis-atmosphere-loss.jpg",
+      "imageCredit": "CrimsonRuins",
+      "hud": "The recorded stage text is THE OCEAN IS BOILING — the seas boiling away and the exposed seabed scorching — so the ground you are standing on changes twice."
     },
     {
       "slug": "thousand-year-rain",
@@ -198,7 +207,10 @@
       "ifCaught": "Climb the nearest structure and keep climbing as pieces break off. Staying on a submerging surface is the same as staying in the water.",
       "worstMaps": "Suburban Neighborhood and Coastal Resort — low buildings with limited height.",
       "sources": 1,
-      "verified": true
+      "verified": true,
+      "image": "/media/dis-thousand-year-rain.jpg",
+      "imageCredit": "RobloMine",
+      "hud": "The counter runs MONTH 10 → years, with a depth readout in metres (1.5 METERS in the recorded round) and the objective FIND THE TALLEST BUILDING, NOW."
     },
     {
       "slug": "yellowstone-erupts",
@@ -223,7 +235,10 @@
       "ifCaught": "Get underground and stay there. The round is decided by whether you had sealed space, not by how you move once the cloud is overhead.",
       "worstMaps": "Maps without underground space excepted — Jungle Pyramids has the most sheltered ground of the recorded maps.",
       "sources": 1,
-      "verified": true
+      "verified": true,
+      "image": "/media/dis-yellowstone-erupts.jpg",
+      "imageCredit": "CrimsonRuins",
+      "hud": "After the eruption the panel reads YELLOWSTONE HAS ERUPTED: ash raining on the whole map and the ground rumbling, with STAY UNDER A ROOF as the objective."
     },
     {
       "slug": "spins-backwards",
@@ -273,7 +288,9 @@
       "ifCaught": "Get down a level and inside. Running for a taller building is the failure move; the round rewards the only prompt that tells you to go low.",
       "worstMaps": "Venice (the recorded map) and any map with a lot of vertical structure — Alpine Ski Resort and Jungle Temple Ruins.",
       "sources": 1,
-      "verified": true
+      "verified": true,
+      "image": "/media/dis-planet-flyby.jpg",
+      "imageCredit": "RobloMine"
     },
     {
       "slug": "witching-hour",
@@ -298,7 +315,9 @@
       "ifCaught": "Run, and change direction rather than backing into a corner. There is no shelter that holds for the whole round here.",
       "worstMaps": "Downtown City (the recorded map) — dense streets with lots of ground for the vines to come up through.",
       "sources": 1,
-      "verified": true
+      "verified": true,
+      "image": "/media/dis-witching-hour.jpg",
+      "imageCredit": "CrimsonRuins"
     },
     {
       "slug": "oxygen-doubles",
@@ -323,7 +342,10 @@
       "ifCaught": "Climb, even to a worse building, rather than running at ground level. Staying upstairs is the only prompt this round gives.",
       "worstMaps": "Stadium District (the recorded map) and Downtown City — dense buildings the fire front travels between.",
       "sources": 1,
-      "verified": true
+      "verified": true,
+      "image": "/media/dis-oxygen-doubles.jpg",
+      "imageCredit": "CrabbyOnRoblox",
+      "hud": "Besides FIRE SPREAD SPEED 6.2× NORMAL, the HUD tracks temperature on the same bar — 48 °C in the recorded round."
     },
     {
       "slug": "earthquake-sequence",
@@ -448,7 +470,9 @@
         "Keep moving between surfaces rather than waiting for the burn to reach you."
       ],
       "ifCaught": "Take the burn for one step up rather than two steps sideways. Height resets the clock; distance does not.",
-      "worstMaps": "Flat maps are the worst — Suburban Neighborhood has the most ground to lose and the fewest high structures."
+      "worstMaps": "Flat maps are the worst — Suburban Neighborhood has the most ground to lose and the fewest high structures.",
+      "image": "/media/dis-floor-becomes-lava.jpg",
+      "imageCredit": "CrabbyOnRoblox"
     },
     {
       "slug": "zombie-outbreak",
@@ -473,7 +497,10 @@
         "Count the crawlers when they appear — that is the signal to abandon the room, not defend it harder."
       ],
       "ifCaught": "Leave the room before the crawlers box you in. Running into the street is survivable; being cornered indoors is not.",
-      "worstMaps": "Suburban Neighborhood — enclosed houses with single doors are the trap, and the streets give crawlers room to run."
+      "worstMaps": "Suburban Neighborhood — enclosed houses with single doors are the trap, and the streets give crawlers room to run.",
+      "image": "/media/dis-zombie-outbreak.jpg",
+      "imageCredit": "CrabbyOnRoblox",
+      "hud": "The objective counts infected inside your shelter — STAY UNDER A ROOF (×8) in the recorded round — and the prompt with it is GET HIGH, NOW: they spread faster than you can run."
     },
     {
       "slug": "earth-tilts",
@@ -498,7 +525,10 @@
         "After the world settles, re-read the map — vertical surfaces are ordinary ground now."
       ],
       "ifCaught": "Do not fight the fall. Once it stops, walk the new floors instead of trying to reach the old ones.",
-      "worstMaps": "Tall, dense maps — Alpine Ski Resort and Jungle Pyramids both have a lot of vertical structure to fall through."
+      "worstMaps": "Tall, dense maps — Alpine Ski Resort and Jungle Pyramids both have a lot of vertical structure to fall through.",
+      "image": "/media/dis-earth-tilts.jpg",
+      "imageCredit": "CrabbyOnRoblox",
+      "hud": "The stage text reads THE OCEANS ARE SLOSHING as the terrain rolls, which is the tell that the water is about to arrive from a direction it never came from before."
     },
     {
       "slug": "every-volcano-erupts",
@@ -573,7 +603,10 @@
         "Do not plan to come back down for anything."
       ],
       "ifCaught": "Climb and get indoors — both halves of this scenario are solved by the same move. Standing in the sun at street level loses to either one.",
-      "worstMaps": "Coastal Resort and Harbor Port for the water, Suburban Neighborhood for the exposure."
+      "worstMaps": "Coastal Resort and Harbor Port for the water, Suburban Neighborhood for the exposure.",
+      "image": "/media/dis-all-ice-melts.jpg",
+      "imageCredit": "RobloMine",
+      "hud": "The stage that arrives with the water is A GIANT ICEBERG IS COMING; the recorded round was on Golden Gate, where the deck is the only dry line."
     },
     {
       "slug": "solar-flare",
@@ -598,7 +631,9 @@
         "If you are on a roof when the banner fires, spend the whole 30 seconds getting off it."
       ],
       "ifCaught": "Get under a roof immediately, even a low one. Distance from the sky matters more than the quality of the shelter.",
-      "worstMaps": "Any map where the only cover is a rooftop — the Golden Gate crossing has the least indoor space of any recorded map."
+      "worstMaps": "Any map where the only cover is a rooftop — the Golden Gate crossing has the least indoor space of any recorded map.",
+      "image": "/media/dis-solar-flare.jpg",
+      "imageCredit": "RobloMine"
     }
   ],
   "announced": [
@@ -690,7 +725,9 @@
       "slug": "hoover-dam",
       "name": "Hoover Dam",
       "note": "Dam structure with a drop on one side — recorded late in a session.",
-      "use": "Very little roof cover but a lot of vertical structure, so it suits water and tilt rounds and punishes flare or bomb rounds."
+      "use": "Very little roof cover but a lot of vertical structure, so it suits water and tilt rounds and punishes flare or bomb rounds.",
+      "image": "/media/map-hoover-dam.jpg",
+      "imageCredit": "CrimsonRuins"
     }
   ],
   "guide": [
@@ -732,5 +769,27 @@
     "Only 7 of the advertised maps have been named in footage.",
     "No codes exist as of 2026-10-25 - the lobby has SHOP, MISSIONS and INDEX, no code box.",
     "The lobby INDEX button may be an in-game disaster index; its contents are still undocumented."
+  ],
+  "mediaCredits": [
+    {
+      "channel": "CrabbyOnRoblox",
+      "video": "https://www.youtube.com/watch?v=Mw8L-ulGcyY",
+      "title": "Roblox WHAT IF DISASTERS...?"
+    },
+    {
+      "channel": "RobloMine",
+      "video": "https://www.youtube.com/watch?v=R_TFuu_1Miw",
+      "title": "\"What If Disasters\" - Roblox, Start Game (No Commentary)"
+    },
+    {
+      "channel": "CrimsonRuins",
+      "video": "https://www.youtube.com/watch?v=iw-veJMilI4",
+      "title": "What if disasters is funny"
+    },
+    {
+      "channel": "bluciour",
+      "video": "https://www.youtube.com/watch?v=qMgWLZOLChc",
+      "title": "WHAT IF... disaster scenarios!"
+    }
   ]
 }

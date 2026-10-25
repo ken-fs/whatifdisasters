@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { gaps, LAST_CHECKED } from "@/data/game";
+import { gaps, LAST_CHECKED, mediaCredits } from "@/data/game";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { GAME, PLATFORM_NAME, SITE_NAME } from "@/lib/site";
 import { GAME_ICON } from "@/lib/media";
@@ -35,11 +35,32 @@ export default function AboutPage() {
               <a href={GAME.official} className="text-link" rel="nofollow noopener">
                 {GAME.name} on {PLATFORM_NAME}
               </a>
-              . Screenshots and the icon on this site are the developer&apos;s official artwork, used here to reference the game.
+              . The two screenshots and the icon are the developer&apos;s official artwork. Everything else on the disaster and map pages is an
+              in-game screenshot taken from a recorded session, credited to the player who recorded it below.
             </figcaption>
           </figure>
         )}
       </div>
+      {mediaCredits.length > 0 && (
+        <section className="mt-12">
+          <h2 className="text-2xl">Screenshot credits</h2>
+          <p className="mt-3 text-sm text-ink-soft">
+            Hazard and map screenshots are stills from these recordings. They are used to show what a round actually looks like; the game
+            and its art belong to the developer.
+          </p>
+          <ul className="mt-4 grid gap-2 text-sm text-ink-soft">
+            {mediaCredits.map((c) => (
+              <li key={c.video}>
+                <a href={c.video} className="text-link" rel="nofollow noopener">
+                  {c.channel}
+                </a>{" "}
+                — {c.title}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       {gaps.length > 0 && (
         <section className="mt-12">
           <h2 className="text-2xl">What nobody has published yet</h2>
