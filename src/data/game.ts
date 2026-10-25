@@ -29,7 +29,7 @@ export type Entity = {
 };
 export type Video = { id: string; title: string; channel: string };
 export type Announced = { name: string; note: string };
-export type MapEntry = { slug: string; name: string; note: string };
+export type MapEntry = { slug: string; name: string; note: string; use?: string };
 
 export const LAST_CHECKED: string = raw.lastChecked;
 export const IS_PLACEHOLDER: boolean = raw._placeholder;

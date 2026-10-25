@@ -67,10 +67,11 @@ export default function HomePage() {
         <Stat value={maps.length} label="maps named so far" />
       </section>
 
-      <section className="container-page mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <section className="container-page mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
         {[
           { href: entityHref(), title: "Disasters", body: "What each banner means and how the hazard plays out." },
           { href: "/maps/", title: "Maps", body: "The locations rounds are set in, and what cover each one offers." },
+          { href: "/lobby/", title: "Lobby", body: "Shop, missions, crates and the pad that loads you into the next round." },
           { href: "/guide/", title: "Round guide", body: "The lobby countdown, the 30-second head start and the results banner." },
           { href: "/codes/", title: "Codes", body: codes.length > 0 ? `${codes.length} working codes.` : "The game has no code box yet — here is how we check." },
         ].map((s) => (

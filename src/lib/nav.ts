@@ -4,6 +4,7 @@ import { ENTITY, cap, entityHref } from "@/lib/site";
 export const NAV_LINKS = [
   { href: entityHref(), label: cap(ENTITY.plural) },
   { href: "/maps/", label: "Maps" },
+  { href: "/lobby/", label: "Lobby" },
   { href: "/guide/", label: "Guide" },
   { href: "/codes/", label: "Codes" },
 ];

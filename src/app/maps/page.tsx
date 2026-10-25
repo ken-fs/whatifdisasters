@@ -30,6 +30,7 @@ export default function MapsPage() {
           <div key={m.slug} id={m.slug} className="tile p-5">
             <h2 className="font-serif text-xl">{m.name}</h2>
             <p className="mt-2 text-sm text-ink-soft">{m.note}</p>
+            {"use" in m && <p className="mt-3 text-sm text-ink-soft"><strong className="text-ink">How to use it:</strong> {(m as { use?: string }).use}</p>}
           </div>
         ))}
       </section>
