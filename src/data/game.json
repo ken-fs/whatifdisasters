@@ -299,6 +299,33 @@
       "imageCredit": "RobloMine"
     },
     {
+      "slug": "sandstorm",
+      "name": "The Sandstorm",
+      "tier": null,
+      "rarity": "Wind",
+      "role": "Alpine Ski Resort (recorded), open maps",
+      "summary": "A dust storm that turns the open ground toxic. The HUD adds DRY LIGHTNING on top — static crackling through the dust and starting fires — so the round is a shelter round with fire outside it.",
+      "howToGet": "Get inside and stay inside. The recorded prompt is STAY INSIDE, and the ground itself is described as too toxic to step on, so a roof matters more than a route.",
+      "banner": "What if the ocean vanished?",
+      "stages": [
+        "Dust rolls in and the stage text reads DRY LIGHTNING: static crackling through the dust and igniting fires.",
+        "The ground becomes toxic to stand on, so running between buildings costs health even before the fires spread.",
+        "The fires started by the lightning keep burning through the round, which is what makes staying put inside the only stable answer."
+      ],
+      "killSpots": "Any open ground, and the gaps between buildings. Players die trying to move to a better shelter once the dust is up and the fires have started.",
+      "prep": [
+        "Pick a building and commit during the 30 seconds — STAY INSIDE is the whole strategy.",
+        "Do not plan a route that needs street time once the lightning starts.",
+        "Watch for fires near your building: the round adds them, so the shelter can be lost from outside."
+      ],
+      "ifCaught": "Get into the nearest interior, even a poor one. Crossing open dust to reach a better building is how this round kills.",
+      "worstMaps": "Alpine Ski Resort (the recorded map) and other open maps with long gaps between buildings.",
+      "image": "/media/dis-sandstorm.jpg",
+      "imageCredit": "SAEELGC",
+      "sources": 1,
+      "verified": true
+    },
+    {
       "slug": "witching-hour",
       "name": "The Witching Hour",
       "tier": null,
@@ -376,7 +403,10 @@
       "ifCaught": "Run for open ground on the foreshock and do not go back inside for anything. If you are on a roof when the magnitude reads, get down the outside rather than waiting for the stairs.",
       "worstMaps": "Dense city maps — Suburban Neighborhood's two-storey houses and Alpine Ski Resort's structures both shed debris.",
       "sources": 2,
-      "verified": true
+      "verified": true,
+      "image": "/media/dis-earthquake-sequence.jpg",
+      "imageCredit": "SAEELGC",
+      "hud": "The magnitude readout sits on the bar (21 in the recorded round) with the stage text A STRONG TREMOR IS SHAKING THIS TOWN — the number climbs, so you can read how far along the sequence is."
     },
     {
       "slug": "biggest-bomb",
@@ -401,7 +431,10 @@
       "ifCaught": "Get behind the heaviest thing you can reach, even if it is a vehicle, and stay low. Running into the open to watch is the failure move.",
       "worstMaps": "Maps with long sightlines and little solid cover — the Golden Gate crossing and Jungle Pyramids.",
       "sources": 1,
-      "verified": true
+      "verified": true,
+      "image": "/media/dis-biggest-bomb.jpg",
+      "imageCredit": "SAEELGC",
+      "hud": "DISTANCE TO DETONATION counts down in kilometres (3 KM in the recorded round) and the prompt is HIDE BEHIND A WALL — distance alone is not the answer."
     },
     {
       "slug": "toxic-air",
@@ -654,10 +687,6 @@
       "note": "Banner confirmed, hazard not documented yet."
     },
     {
-      "name": "The ocean vanishes",
-      "note": "Banner confirmed, ends in a salt storm."
-    },
-    {
       "name": "A city-killing asteroid",
       "note": "Banner confirmed, hazard not documented yet."
     },
@@ -740,6 +769,18 @@
       "use": "Very little roof cover but a lot of vertical structure, so it suits water and tilt rounds and punishes flare or bomb rounds.",
       "image": "/media/map-hoover-dam.jpg",
       "imageCredit": "CrimsonRuins"
+    },
+    {
+      "slug": "starlight-drive-in",
+      "name": "Starlight Drive-in",
+      "note": "Drive-in cinema lot with a screen tower — recorded with the magnitude 10 earthquake.",
+      "use": "The screen tower is the one tall structure; that makes it the high ground for water rounds and the worst place to be in an earthquake."
+    },
+    {
+      "slug": "canyon-town",
+      "name": "Canyon Town",
+      "note": "Canyon settlement on several levels — recorded across a long session.",
+      "use": "Layered ground means there is always a higher shelf to reach, which suits water and lava rounds; the walls also block line of sight for tornado tracking."
     }
   ],
   "guide": [
@@ -802,6 +843,11 @@
       "channel": "bluciour",
       "video": "https://www.youtube.com/watch?v=qMgWLZOLChc",
       "title": "WHAT IF... disaster scenarios!"
+    },
+    {
+      "channel": "SAEELGC",
+      "video": "https://www.youtube.com/watch?v=15_LUVYqStE",
+      "title": "Roblox - Gameplay Walkthrough - What If Disasters"
     }
   ]
 }
