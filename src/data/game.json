@@ -1,14 +1,14 @@
 {
   "_readme": "Every fact the pages print comes from here. Unknown stays null - the pages render a gap, never a guess. Hazard wording comes from the in-game 'What if...' banners as recorded in creator footage (Votex, 2026-10-19; VendoPlus via AllThingsHow, 2026-10-20). Survival notes are guidance derived from that hazard behaviour, not developer statements.",
   "_placeholder": false,
-  "lastChecked": "2026-10-25",
+  "lastChecked": "2026-10-27",
   "codes": [],
   "expiredCodes": [],
   "redeemSteps": [],
   "codesFaq": [
     {
       "q": "Does What If Disasters have codes?",
-      "a": "Not yet. Every round we re-check the lobby, the group shout and the developer's socials; nothing has been released as of 25 October 2026. The game's lobby buttons are SHOP, MISSIONS and INDEX - no codes button is documented."
+      "a": "Not yet. Every round we re-check the lobby, the group shout and the developer's socials; nothing has been released as of 27 October 2026. The game's lobby buttons are SHOP, MISSIONS and INDEX - no codes button is documented."
     },
     {
       "q": "Why do people search for What If Disasters codes?",
@@ -801,6 +801,18 @@
       "body": "Surviving pays credits, and credits buy equipment in the lobby shop. Crates are the other sink. Game passes are the Robux shortcut and are not required to survive rounds - several recorded rounds were won with starter equipment by moving early."
     },
     {
+      "heading": "Disaster prestige",
+      "body": "Survive the same disaster 5 times and you can unlock prestige for that disaster. It raises the XP and credits you get from it. Each disaster counts on its own, so prestige on one doesn't carry to the others. The ARCHIVES menu shows how many times you've survived each disaster. Source: one creator video (Radex Tips, 2026-10-26). The game hasn't published this."
+    },
+    {
+      "heading": "Basics from the creator video",
+      "body": "You start each round with 100 HP, so you can take some damage, but avoiding it is still better. Move with WASD, jump with space, and press E to interact. When the round ends you're sent back to the hub and get XP and credits. Source: Radex Tips, 2026-10-26."
+    },
+    {
+      "heading": "Shop items and missions",
+      "body": "The creator says most equipment-shop items are cosmetic or just for fun, and don't clearly help you survive. So don't buy gear hoping it makes rounds easier. Daily missions give credits every day. Weekly missions give bigger rewards once a week. Missions are usually about surviving a number of rounds or a certain disaster. Source: Radex Tips, 2026-10-26."
+    },
+    {
       "heading": "If you die",
       "body": "Dead players spectate until the results banner, which reads X OF Y SURVIVED and lists survivors and casualties. Use that time on the next map instead of the current one: the disaster has already been decided."
     }
@@ -820,7 +832,10 @@
   "gaps": [
     "The developer advertises more scenarios than the 22 recorded here; the exact current count has not been published as a list.",
     "Only 7 of the advertised maps have been named in footage.",
-    "No codes exist as of 2026-10-25 - the lobby has SHOP, MISSIONS and INDEX, no code box.",
+    "One creator video (Radex Tips, 2026-10-26) says the game has 26 disasters and 18 maps. This site lists 24 disasters and 14 maps. The extra ones haven't been seen by us, so we don't name any.",
+    "Prestige rules (5 survivals per disaster, higher XP and credits) come from that same single video. The exact bonus size and what the prestige unlock looks like are not documented.",
+    "The game updated on 2026-10-27 (about 01:28). No video or official note describing the changes has been found yet, so nothing is claimed about it.",
+    "No codes exist as of 2026-10-27 - every known code source returned 404 on a manual check. The lobby has SHOP, MISSIONS and INDEX, no code box.",
     "The lobby INDEX button may be an in-game disaster index; its contents are still undocumented."
   ],
   "mediaCredits": [
