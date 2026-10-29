@@ -2,7 +2,7 @@
   "template": "game-next",
   "templateDir": "game-template-next",
   "templateRemote": "https://github.com/ken-fs/game-template-next.git",
-  "templateCommit": "fabf9153e71ea0a6393ce58ba1ef9b855c02e345",
+  "templateCommit": "4a400c73b99a13aceb660632ff852f855a67518e",
   "createdAt": "2026-10-25T03:29:57.782Z",
   "domain": "what-if-disasters.wiki",
   "theme": "ember",
