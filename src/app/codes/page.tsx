@@ -38,7 +38,10 @@ export default function CodesPage() {
         </p>
       </header>
 
+      {/* One unit near the top on every device (template 82a21fe): phones used to get only the lazy rectangle
+          at the bottom, so phone visitors who read the answer and left never loaded a banner. */}
       <AdsterraBanner slot={LEADERBOARD} className="mb-10 hidden md:flex" />
+      <AdsterraBanner slot={RECTANGLE} className="mb-10 md:hidden" />
 
       <section className="tile overflow-x-auto p-5">
         <table className="data">
@@ -95,7 +98,7 @@ export default function CodesPage() {
         </section>
       )}
 
-      <AdsterraBanner slot={RECTANGLE} className="mt-14" />
+      <AdsterraBanner slot={RECTANGLE} className="mt-14 hidden md:flex" />
 
       <section className="mt-14">
         <h2 className="text-2xl">Questions</h2>
