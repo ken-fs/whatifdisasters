@@ -10,6 +10,8 @@ import type { AdSlot } from "@/lib/ads";
  *  - sandbox WITHOUT allow-same-origin: a plain srcdoc iframe inherits this page's
  *    origin and the ad script could read the page (seen 2026-10-09, aistatement).
  *  - Fixed width/height reserved up front → no layout shift (CLS stays 0).
+ *  - Loads only when visible and near the viewport (IntersectionObserver), so a
+ *    CSS-hidden unit never registers an impression.
  */
 export function AdsterraBanner({ slot, className = "" }: { slot: AdSlot; className?: string }) {
   const ref = useRef<HTMLIFrameElement>(null);
@@ -17,7 +19,7 @@ export function AdsterraBanner({ slot, className = "" }: { slot: AdSlot; classNa
   useEffect(() => {
     const iframe = ref.current;
     if (!iframe || !slot.key || !slot.src) return;
-    iframe.srcdoc = `<!doctype html><html><head><meta charset="utf-8">
+    const html = `<!doctype html><html><head><meta charset="utf-8">
 <style>html,body{margin:0;padding:0;overflow:hidden;background:transparent}</style>
 </head><body>
 <script type="text/javascript">
@@ -25,6 +27,25 @@ atOptions={key:'${slot.key}',format:'iframe',height:${slot.height},width:${slot.
 </${""}script>
 <script type="text/javascript" src="${slot.src}"></${""}script>
 </body></html>`;
+    // Fill srcdoc only once the slot is actually on screen (or close). srcdoc ignores loading="lazy",
+    // and the CSS-hidden twin of a responsive pair (728x90 on phones, the phone-only 300x250 on desktop)
+    // used to load anyway: impressions for ads nobody could see (found 2026-10-31). A display:none
+    // element never intersects, so the hidden twin now never loads.
+    if (!("IntersectionObserver" in window)) {
+      if (iframe.offsetParent) iframe.srcdoc = html;
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          iframe.srcdoc = html;
+          io.disconnect();
+        }
+      },
+      { rootMargin: "600px 0px" },
+    );
+    io.observe(iframe);
+    return () => io.disconnect();
   }, [slot.key, slot.width, slot.height, slot.src]);
 
   if (!slot.key || !slot.src) return null;
