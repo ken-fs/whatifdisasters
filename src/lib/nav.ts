@@ -5,6 +5,7 @@ export const NAV_LINKS = [
   { href: entityHref(), label: cap(ENTITY.plural) },
   { href: "/maps/", label: "Maps" },
   { href: "/lobby/", label: "Lobby" },
+  { href: "/shop/", label: "Shop" },
   { href: "/guide/", label: "Guide" },
   { href: "/codes/", label: "Codes" },
 ];

@@ -74,7 +74,11 @@ export default function LobbyPage() {
         <p className="mt-3 text-ink-soft">
           A Witching Hour Crate station sits next to the leaderboards with an OPEN THE CRATE prompt. It is tied to the shop&apos;s Fright
           Night tab, which is the Halloween-season rotation rather than a permanent part of the shop. During that window the crate is the
-          thing to spend on; outside it, equipment from the credits side is what carries between rounds.
+          thing to spend on; outside it, equipment from the credits side is what carries between rounds. Crate and gamepass prices are on{" "}
+          <Link href="/shop/" className="text-link">
+            the shop page
+          </Link>
+          .
         </p>
         <p className="mt-3 text-ink-soft">
           There is no code box anywhere in this lobby. The buttons are SHOP, MISSIONS, SPECTATE and INDEX — so a codes page for this game

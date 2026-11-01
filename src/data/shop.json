@@ -1,0 +1,270 @@
+{
+  "checkedAt": "2026-11-01",
+  "universeId": 10769484703,
+  "gamePasses": [
+    {
+      "id": 2012912316,
+      "name": "Red Balloon",
+      "price": 99,
+      "description": "Jump higher and fall slower"
+    },
+    {
+      "id": 2012762323,
+      "name": "VIP",
+      "price": 299,
+      "description": "+100% credits every round\r\n+50% XP gain\r\n+ VIP Title"
+    },
+    {
+      "id": 2014700328,
+      "name": "Boombox",
+      "price": 149,
+      "description": "Play music for everyone to hear!"
+    },
+    {
+      "id": 2053235983,
+      "name": "+2 Cosmetic Slots",
+      "price": 149,
+      "description": "Carry 2 more cosmetics at once! Cosmetics are not GEAR: they're just for looks and don't help you survive."
+    }
+  ],
+  "products": [
+    {
+      "id": 3717548312,
+      "name": "2x XP (30 min)",
+      "price": 49,
+      "description": "Double XP from rounds for 30 minutes of playtime.",
+      "added": "2026-10-09"
+    },
+    {
+      "id": 3717548334,
+      "name": "2x XP (2 hours)",
+      "price": 129,
+      "description": "Double XP from rounds for 2 hours of playtime.",
+      "added": "2026-10-09"
+    },
+    {
+      "id": 3717548336,
+      "name": "1,000 Credits",
+      "price": 49,
+      "description": "1,000 credits to spend in The Vault.",
+      "added": "2026-10-09"
+    },
+    {
+      "id": 3717548340,
+      "name": "2,200 Credits",
+      "price": 99,
+      "description": "A bag of credits for The Vault. 9% extra.",
+      "added": "2026-10-09"
+    },
+    {
+      "id": 3717548343,
+      "name": "6,000 Credits",
+      "price": 249,
+      "description": "A crate of credits for The Vault. 18% extra.",
+      "added": "2026-10-09"
+    },
+    {
+      "id": 3717548346,
+      "name": "13,000 Credits",
+      "price": 499,
+      "description": "A vault full of credits. 28% extra.",
+      "added": "2026-10-09"
+    },
+    {
+      "id": 3717548350,
+      "name": "28,000 Credits + Bunker Baron Title",
+      "price": 999,
+      "description": "A fortune in credits (37% extra), plus the exclusive Baron title.",
+      "added": "2026-10-09"
+    },
+    {
+      "id": 3717575756,
+      "name": "Gift: VIP",
+      "price": 299,
+      "description": "A gift for another player: the VIP gamepass.",
+      "added": "2026-10-10"
+    },
+    {
+      "id": 3717575768,
+      "name": "Gift: Red Balloon",
+      "price": 99,
+      "description": "A gift for another player: the Red Balloon gamepass.",
+      "added": "2026-10-10"
+    },
+    {
+      "id": 3717575776,
+      "name": "Gift: Neon Boombox",
+      "price": 149,
+      "description": "A gift for another player: the Neon Boombox gamepass.",
+      "added": "2026-10-10"
+    },
+    {
+      "id": 3717575789,
+      "name": "Gift: 2x XP 30 min",
+      "price": 49,
+      "description": "A gift for another player: 30 minutes of double XP.",
+      "added": "2026-10-10"
+    },
+    {
+      "id": 3717575797,
+      "name": "Gift: 2x XP 2 hours",
+      "price": 129,
+      "description": "A gift for another player: 2 hours of double XP.",
+      "added": "2026-10-10"
+    },
+    {
+      "id": 3717575803,
+      "name": "Gift: 1,000 Credits",
+      "price": 49,
+      "description": "A gift for another player: 1,000 credits.",
+      "added": "2026-10-10"
+    },
+    {
+      "id": 3717575815,
+      "name": "Gift: 2,200 Credits",
+      "price": 99,
+      "description": "A gift for another player: 2,200 credits.",
+      "added": "2026-10-10"
+    },
+    {
+      "id": 3717575820,
+      "name": "Gift: 6,000 Credits",
+      "price": 249,
+      "description": "A gift for another player: 6,000 credits.",
+      "added": "2026-10-10"
+    },
+    {
+      "id": 3717575829,
+      "name": "Gift: 13,000 Credits",
+      "price": 499,
+      "description": "A gift for another player: 13,000 credits.",
+      "added": "2026-10-10"
+    },
+    {
+      "id": 3717575838,
+      "name": "Gift: 28,000 Credits",
+      "price": 999,
+      "description": "A gift for another player: 28,000 credits and the Baron title.",
+      "added": "2026-10-10"
+    },
+    {
+      "id": 3717814398,
+      "name": "Witching Hour Crate",
+      "price": 39,
+      "description": "Open one Witching Hour Crate: one random Halloween item or title. Odds are shown in the game before you buy.",
+      "added": "2026-10-11"
+    },
+    {
+      "id": 3718677960,
+      "name": "Witching Hour Crate x3",
+      "price": 117,
+      "description": "Open 3 Witching Hour Crates at once: 3 random Halloween items or titles. Odds are shown in the game before you buy.",
+      "added": "2026-10-15"
+    },
+    {
+      "id": 3718677967,
+      "name": "Witching Hour Crate x5",
+      "price": 195,
+      "description": "Open 5 Witching Hour Crates at once: 5 random Halloween items or titles. Odds are shown in the game before you buy.",
+      "added": "2026-10-15"
+    },
+    {
+      "id": 3718677974,
+      "name": "Witching Hour Crate x10",
+      "price": 390,
+      "description": "Open 10 Witching Hour Crates at once: 10 random Halloween items or titles. Odds are shown in the game before you buy.",
+      "added": "2026-10-15"
+    },
+    {
+      "id": 3718823144,
+      "name": "2x XP (10 min)",
+      "price": 19,
+      "description": "Double XP from rounds for 10 minutes of playtime.",
+      "added": "2026-10-15"
+    },
+    {
+      "id": 3722212433,
+      "name": "Gift: +2 Cosmetic Slots",
+      "price": 149,
+      "description": "A gift for another player: the +2 Cosmetic Slots gamepass.",
+      "added": "2026-10-25"
+    },
+    {
+      "id": 3722498318,
+      "name": "2x XP (12 hours)",
+      "price": 299,
+      "description": "Double XP from rounds for 12 hours of playtime.",
+      "added": "2026-10-26"
+    },
+    {
+      "id": 3722498325,
+      "name": "2x XP (24 hours)",
+      "price": 499,
+      "description": "Double XP from rounds for 24 hours of playtime.",
+      "added": "2026-10-26"
+    },
+    {
+      "id": 3722498336,
+      "name": "Gift: 2x XP 12 hours",
+      "price": 299,
+      "description": "A gift for another player: 12 hours of double XP.",
+      "added": "2026-10-26"
+    },
+    {
+      "id": 3722498344,
+      "name": "Gift: 2x XP 24 hours",
+      "price": 499,
+      "description": "A gift for another player: 24 hours of double XP.",
+      "added": "2026-10-26"
+    },
+    {
+      "id": 3724668565,
+      "name": "200 CORN",
+      "price": 39,
+      "description": "A sack of corn for your Harvest Feast turkey.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": 3724668574,
+      "name": "550 CORN",
+      "price": 99,
+      "description": "A basket of corn for your Harvest Feast turkey.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": 3724668582,
+      "name": "1,500 CORN",
+      "price": 249,
+      "description": "A barrel of corn for your Harvest Feast turkey.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": 3724668593,
+      "name": "3,200 CORN",
+      "price": 499,
+      "description": "A cart of corn for your Harvest Feast turkey.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": 3724668604,
+      "name": "6,800 CORN",
+      "price": 999,
+      "description": "A whole harvest of corn for your Harvest Feast turkey.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": 3724668609,
+      "name": "HARVEST MEMBERSHIP",
+      "price": 99,
+      "description": "300 corn now, then 100 corn a day until the event ends.",
+      "added": "2026-10-31"
+    },
+    {
+      "id": 3724920563,
+      "name": "Harvest Pass",
+      "price": 449,
+      "description": "10 extra rewards, +50% corn and better Golden Chick odds.",
+      "added": "2026-10-31"
+    }
+  ]
+}

@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     [entityHref(), 0.8],
     ["/maps/", 0.8],
     ["/lobby/", 0.7],
+    ["/shop/", 0.7],
     ["/guide/", 0.7],
     ["/about/", 0.3],
     ["/privacy/", 0.1],
