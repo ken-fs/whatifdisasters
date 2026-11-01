@@ -16,8 +16,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ["/shop/", 0.7],
     ["/guide/", 0.7],
     ["/about/", 0.3],
-    ["/privacy/", 0.1],
-    ["/terms/", 0.1],
     ...entities.map((e): [string, number] => [entityHref(e.slug), 0.6]),
   ];
   return routes.map(([path, priority]) => ({ url: SITE_URL + path, lastModified, priority }));

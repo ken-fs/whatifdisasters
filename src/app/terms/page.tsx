@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Terms",
   description: `The short terms for using ${SITE_NAME}: it's a free fan site, info can go out of date, and game names belong to their owners.`,
   alternates: { canonical: "/terms/" },
+  // Legal pages stay reachable (footer) but out of the index: on padeliber, hikeforeggs and whatifdisasters
+  // they picked up brand / "<game> wiki" impressions with zero clicks, next to the homepage.
+  robots: { index: false, follow: true },
 };
 
 export default function TermsPage() {

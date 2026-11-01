@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Privacy",
   description: `What ${SITE_NAME} collects (very little), how analytics consent works, and how ads on this site handle data.`,
   alternates: { canonical: "/privacy/" },
+  // Legal pages stay reachable (footer) but out of the index: on padeliber, hikeforeggs and whatifdisasters
+  // they picked up brand / "<game> wiki" impressions with zero clicks, next to the homepage.
+  robots: { index: false, follow: true },
 };
 
 export default function PrivacyPage() {

@@ -5,7 +5,9 @@ import { GAME, PLATFORM_NAME, SITE_NAME } from "@/lib/site";
 import { GAME_ICON } from "@/lib/media";
 
 export const metadata: Metadata = {
-  title: { absolute: `About — ${SITE_NAME}` },
+  // No site name in the title: "About — <Game> Wiki" ranked for "<game> roblox wiki" next to the homepage
+  // (whatifdisasters #4.4, padeliber 249 impressions / 0 clicks in October).
+  title: { absolute: "About this site: sources, checks and gaps" },
   description: `How ${SITE_NAME} checks ${GAME.name} facts: what counts as a source, when a disaster page goes live, and what is still unknown.`,
   alternates: { canonical: "/about/" },
 };
