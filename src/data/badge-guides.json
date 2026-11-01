@@ -1,0 +1,184 @@
+{
+  "_readme": "How to get each secret badge. From Ship/research/whatifdisasters-badges-2026-11.json: every how-to has two independent sources (Deadeye and codeshunterx4 videos, both 2026-10-21). Titles marked titleConfirmed appear in both videos; the rest are read off one video.",
+  "checkedAt": "2026-11-01",
+  "guides": [
+    {
+      "name": "Statue",
+      "howTo": "Get to a safe hiding spot before the disaster starts, then don't touch any controls until the round ends. If you move, or the disaster pushes your character, it doesn't count.",
+      "steps": [
+        "During the countdown, run to a covered spot where the disaster can't move or kill you (both creators hid inside a building)",
+        "When the disaster starts, stop moving completely and stay AFK",
+        "Stay alive until the round ends; the achievement pops up in the lobby with the results screen"
+      ],
+      "map": null,
+      "mapName": null,
+      "title": "Statue",
+      "titleConfirmed": false,
+      "caveat": "Neither guide says whether the lobby AFK toggle counts as standing still.",
+      "sources": [
+        "https://www.youtube.com/watch?v=Q_ouKFj0Vdo&t=10s",
+        "https://www.youtube.com/watch?v=hH70-CMkDmA&t=0s",
+        "https://www.youtube.com/watch?v=Q_ouKFj0Vdo&lc=UgzpXLTNBjGS306Tz794AaABAg.AcQTHvyGRacAcQUUzR4c3v"
+      ],
+      "confirmed": true
+    },
+    {
+      "name": "First To Go",
+      "howTo": "Be the first player in the server to die after the disaster starts. The simplest way is to reset your character right after the disaster begins.",
+      "steps": [
+        "Wait in the map until the countdown ends and the 'WHAT IF...' disaster title appears",
+        "Reset your character straight away (or die to the disaster before anyone else does)",
+        "The achievement is awarded right away"
+      ],
+      "map": null,
+      "mapName": null,
+      "title": "Speedrunner",
+      "titleConfirmed": false,
+      "caveat": "One player reports it didn't pop even after dying first, and one of the two creators says some secret badges took a few tries.",
+      "sources": [
+        "https://www.youtube.com/watch?v=Q_ouKFj0Vdo&t=37s",
+        "https://www.youtube.com/watch?v=hH70-CMkDmA&t=32s",
+        "https://www.youtube.com/watch?v=hH70-CMkDmA&lc=UgzCAgd_9lGjpa_cXrB4AaABAg.AcGJa9E_pk8AcQbEfof78E"
+      ],
+      "confirmed": true
+    },
+    {
+      "name": "Crow's Nest",
+      "howTo": "On Downtown City, climb the yellow construction crane and be standing on it, out on the edge of the jib, when the disaster ends.",
+      "steps": [
+        "Wait until a round lands on Downtown City",
+        "Climb the yellow tower crane at the construction site",
+        "Go out to the edge of the crane's horizontal arm (jib)",
+        "Stay on the crane and survive until the disaster ends"
+      ],
+      "map": "downtown-city",
+      "mapName": "Downtown City",
+      "title": "Skyfall",
+      "titleConfirmed": true,
+      "caveat": null,
+      "sources": [
+        "https://www.youtube.com/watch?v=Q_ouKFj0Vdo&t=53s",
+        "https://www.youtube.com/watch?v=hH70-CMkDmA&t=75s"
+      ],
+      "confirmed": true
+    },
+    {
+      "name": "Lightkeeper",
+      "howTo": "On Coastal Resort, take the lighthouse lift (yellow 'Ride Up' button inside) and be standing on the very top of the lighthouse, above the lamp, when the disaster ends.",
+      "steps": [
+        "On Coastal Resort, follow Lighthouse Rd up the hill to the red-and-white lighthouse",
+        "Go inside and press the yellow 'Ride Up' button to reach the lamp room",
+        "Climb onto the very top of the lighthouse, above the light",
+        "Survive there until the disaster ends"
+      ],
+      "map": "coastal-resort",
+      "mapName": "Coastal Resort",
+      "title": "Lightkeeper",
+      "titleConfirmed": false,
+      "caveat": "One player says standing on the lighthouse didn't count. You have to be on the very top, above the lamp.",
+      "sources": [
+        "https://www.youtube.com/watch?v=Q_ouKFj0Vdo&t=72s",
+        "https://www.youtube.com/watch?v=hH70-CMkDmA&t=107s",
+        "https://www.youtube.com/watch?v=Q_ouKFj0Vdo&lc=UgzowOM3udfXMMfAkBp4AaABAg.AcEqsty3BOXAcPq0HEc6uQ"
+      ],
+      "confirmed": true
+    },
+    {
+      "name": "Tank Top",
+      "howTo": "On Suburban Neighborhood, climb the ladder of the blue water tower and be standing on top of the tank's lid when the disaster ends.",
+      "steps": [
+        "On Suburban Neighborhood, head to the tall blue water tower",
+        "Climb the ladder up the tower legs",
+        "Stand on the pointed roof (lid) of the tank",
+        "Survive there until the disaster ends"
+      ],
+      "map": "suburban-neighborhood",
+      "mapName": "Suburban Neighborhood",
+      "title": "Apex",
+      "titleConfirmed": false,
+      "caveat": null,
+      "sources": [
+        "https://www.youtube.com/watch?v=Q_ouKFj0Vdo&t=98s",
+        "https://www.youtube.com/watch?v=hH70-CMkDmA&t=151s"
+      ],
+      "confirmed": true
+    },
+    {
+      "name": "Into The Abyss",
+      "howTo": "Swim (or take a boat out and dive) all the way down until you touch the seabed, then survive the rest of the disaster anywhere.",
+      "steps": [
+        "Go into the sea",
+        "Dive straight down until your character touches the sand on the seabed",
+        "Come back up before you drown, and survive the disaster anywhere until the round ends"
+      ],
+      "map": null,
+      "mapName": null,
+      "title": "Deep Diver",
+      "titleConfirmed": false,
+      "caveat": null,
+      "sources": [
+        "https://www.youtube.com/watch?v=Q_ouKFj0Vdo&t=126s",
+        "https://www.youtube.com/watch?v=hH70-CMkDmA&t=191s"
+      ],
+      "confirmed": true
+    },
+    {
+      "name": "Sisyphus",
+      "howTo": "In the lobby (the wooden Disaster Archive building you wait in between rounds), push the smallest red ball all the way up the stairs to the upper floor.",
+      "steps": [
+        "While you're in the lobby (after a round or while spectating), find the coloured balls on the ground floor",
+        "Pick the smallest one, the red ball (not the big orange, green or yellow ones)",
+        "Walk into it to push it up the wooden staircase to the upper floor",
+        "The achievement pops up once the ball reaches the top"
+      ],
+      "map": null,
+      "mapName": null,
+      "title": "Sisyphus",
+      "titleConfirmed": true,
+      "caveat": null,
+      "sources": [
+        "https://www.youtube.com/watch?v=Q_ouKFj0Vdo&t=155s",
+        "https://www.youtube.com/watch?v=hH70-CMkDmA&t=229s"
+      ],
+      "confirmed": true
+    },
+    {
+      "name": "Chosen One",
+      "howTo": "You can't do anything to trigger it. Both guides say there's a random 1-in-1,000 chance of getting it every time you survive a disaster, so you just keep surviving rounds.",
+      "steps": [
+        "Survive disasters as usual; each survival is reported to give a small random chance"
+      ],
+      "map": null,
+      "mapName": null,
+      "title": null,
+      "titleConfirmed": false,
+      "caveat": "Neither video shows it being awarded, so the 1-in-1,000 figure is the creators' word, not something we checked.",
+      "sources": [
+        "https://www.youtube.com/watch?v=Q_ouKFj0Vdo&t=177s",
+        "https://www.youtube.com/watch?v=hH70-CMkDmA&t=285s",
+        "https://www.youtube.com/watch?v=Q_ouKFj0Vdo&lc=Ugy9a1K5UOIemNSAKF54AaABAg.AcOeqIvzEJcAcOf9TkRsYJ",
+        "https://www.youtube.com/watch?v=hH70-CMkDmA&lc=UgyHmGF51MenSrF7vUB4AaABAg.AcT9d1EstOcAceEyxqCZso"
+      ],
+      "confirmed": true
+    },
+    {
+      "name": "Castaway",
+      "howTo": "On Venice (the canal city with a harbour), take one of the moored boats out to sea and land on the small palm-tree island on the horizon.",
+      "steps": [
+        "On Venice, go to the canals or harbour and get in one of the parked motorboats",
+        "Drive out of the harbour toward the small island with palm trees on the horizon",
+        "Get onto the island; the achievement pops up when you arrive"
+      ],
+      "map": "venice",
+      "mapName": "Venice",
+      "title": "Castaway",
+      "titleConfirmed": false,
+      "caveat": null,
+      "sources": [
+        "https://www.youtube.com/watch?v=Q_ouKFj0Vdo&t=190s",
+        "https://www.youtube.com/watch?v=hH70-CMkDmA&t=301s"
+      ],
+      "confirmed": true
+    }
+  ]
+}

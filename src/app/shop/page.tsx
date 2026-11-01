@@ -164,7 +164,11 @@ export default function ShopPage() {
             ))}
           </ul>
           <p className="mt-3 text-sm text-ink-soft">
-            The game has other titles too, but the store doesn&apos;t list them, so we don&apos;t either until they&apos;re confirmed.
+            Secret badges give titles too, like Skyfall for Crow&apos;s Nest:{" "}
+            <Link href="/badges/" className="text-link">
+              badges and their titles
+            </Link>
+            .
           </p>
         </section>
       )}

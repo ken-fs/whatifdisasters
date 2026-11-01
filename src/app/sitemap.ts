@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ["/maps/", 0.8],
     ["/lobby/", 0.7],
     ["/shop/", 0.7],
+    ["/badges/", 0.8],
     ["/guide/", 0.7],
     ["/about/", 0.3],
     ...entities.map((e): [string, number] => [entityHref(e.slug), 0.6]),

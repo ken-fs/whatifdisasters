@@ -3,6 +3,10 @@ import Link from "next/link";
 import { maps, LAST_CHECKED } from "@/data/game";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { GAME, entityHref } from "@/lib/site";
+import badgeGuides from "@/data/badge-guides.json";
+
+/** Secret badges tied to one map (src/data/badge-guides.json), shown on that map's card. */
+const badgeOnMap = (slug: string) => badgeGuides.guides.filter((g) => g.map === slug);
 
 // One page for the map list rather than one page per map: only a handful of maps have enough recorded detail to
 // stand alone, and a thin page per map is the failure mode animebreaker hit (166-word pages pulled from the index).
@@ -41,6 +45,14 @@ export default function MapsPage() {
               />
             )}
             <p className="mt-2 text-sm text-ink-soft">{m.note}</p>
+            {badgeOnMap(m.slug).map((g) => (
+              <p key={g.name} className="mt-3 text-sm text-ink-soft">
+                <strong className="text-ink">Secret badge here:</strong> {g.name}.{" "}
+                <Link href="/badges/" className="text-link">
+                  How to get it
+                </Link>
+              </p>
+            ))}
             {"use" in m && <p className="mt-3 text-sm text-ink-soft"><strong className="text-ink">How to use it:</strong> {(m as { use?: string }).use}</p>}
           </div>
         ))}

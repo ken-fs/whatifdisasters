@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/write-deploy-marker.mjs && node scripts/fetch-shop.mjs",
+    "prebuild": "node scripts/write-deploy-marker.mjs && node scripts/fetch-shop.mjs && node scripts/fetch-badges.mjs",
     "build": "next build",
     "postbuild": "node scripts/check-export.mjs",
     "typecheck": "next typegen && tsc --noEmit",
