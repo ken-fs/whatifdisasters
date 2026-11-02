@@ -22,6 +22,10 @@ export default function GuidePage() {
           The short version of a round, in the order it happens. There are no codes to redeem here - rewards come from the shop and
           crates you pay for with credits.
         </p>
+        <p className="mt-3 max-w-[60ch] text-ink-soft">
+          Looking for the full {GAME.name} Roblox wiki? Every disaster, map, badge and shop item is on the{" "}
+          <a href="/" className="text-link">wiki home page</a>.
+        </p>
       </header>
       <div className="grid max-w-3xl gap-10">
         {guide.map((s, i) => (
