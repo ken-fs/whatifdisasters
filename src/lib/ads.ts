@@ -26,4 +26,4 @@ export const RECTANGLE: AdSlot = {
 };
 
 /** Adsterra Social Bar script URL (site-wide sticky bar, their highest-CPM format). Empty string = off. */
-export const SOCIAL_BAR_SRC = "";
+export const SOCIAL_BAR_SRC = "https://bauval.org/14/d8765ca8d37879247b6720f971eab32b";
