@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/breadcrumbs";
-import { CONTACT_EMAIL, GAME, PLATFORM_NAME, SITE_NAME } from "@/lib/site";
-import { LAST_CHECKED } from "@/data/game";
+import { CONTACT_EMAIL, GAME, LEGAL_UPDATED, PLATFORM_NAME, SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Terms",
@@ -28,7 +27,7 @@ export default function TermsPage() {
           and we will.
         </p>
         <p>Links to other sites are there to help; we don&apos;t control what&apos;s on them.</p>
-        <p className="text-sm text-ink-faint">Last updated {LAST_CHECKED}.</p>
+        <p className="text-sm text-ink-faint">Last updated {LEGAL_UPDATED}.</p>
       </div>
     </article>
   );

@@ -13,6 +13,8 @@ export const SHORT_NAME = site.shortName;
 export const SITE_DESCRIPTION = site.description;
 export const GAME = site.game;
 export const CONTACT_EMAIL = site.contactEmail;
+/** Date the terms / privacy text last really changed. Fixed on purpose: bump it by hand only when the policy wording changes, never from lastChecked (that moves with every codes check). */
+export const LEGAL_UPDATED: string = site.legalUpdated;
 export const ENTITY = site.entity;
 /** GA4 measurement id. Public by design, so it lives in config; env wins for previews. */
 export const GA_ID = process.env.NEXT_PUBLIC_GA_ID || site.gaId;

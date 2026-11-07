@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/breadcrumbs";
-import { CONTACT_EMAIL, SITE_NAME, SITE_URL } from "@/lib/site";
-import { LAST_CHECKED } from "@/data/game";
+import { CONTACT_EMAIL, LEGAL_UPDATED, SITE_NAME, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Privacy",
@@ -41,7 +40,7 @@ export default function PrivacyPage() {
             {CONTACT_EMAIL}
           </a>
         </p>
-        <p className="text-sm text-ink-faint">Last updated {LAST_CHECKED}.</p>
+        <p className="text-sm text-ink-faint">Last updated {LEGAL_UPDATED}.</p>
       </div>
     </article>
   );
