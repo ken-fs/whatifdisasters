@@ -9,5 +9,11 @@
   "themePickedBy": "--theme",
   "themesDir": "game-themes",
   "themesCommit": "6ce2b8635b4fead924de84dc23425ce7639eb98a",
-  "syncNote": "2026-11-07 同步 e057287（法律页日期固定为 legalUpdated）"
+  "syncNote": "2026-11-07 同步 e057287（法律页日期固定为 legalUpdated）",
+  "skippedFixes": [
+    {
+      "commit": "0d00b88",
+      "why": "Only touches the shopMatch price table added in e16bce0; this site's entity page has no such table (2026-11-12)."
+    }
+  ]
 }
