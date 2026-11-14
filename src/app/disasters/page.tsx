@@ -20,11 +20,11 @@ export default function EntityListPage() {
       <Breadcrumbs items={[{ name: cap(ENTITY.plural), href: entityHref() }]} />
       <header className="pt-6 pb-10">
         <h1 className="text-4xl sm:text-5xl">
-          {GAME.name}: every {ENTITY.singular}
+          Every {ENTITY.singular} type, and where to stand
         </h1>
         <p className="mt-4 max-w-[60ch] text-ink-soft">
           All {entities.length} {ENTITY.plural} recorded so far — what the banner says, what the hazard does to the map, and where to stand.
-          Ones without a screenshot yet are still fully documented. For codes, maps and the basics, go to the{" "}
+          Ones without a screenshot yet are still fully documented. Looking for codes, maps and the basics? Start at the{" "}
           <Link href="/" className="text-link">{GAME.name} home page</Link>.
         </p>
       </header>
