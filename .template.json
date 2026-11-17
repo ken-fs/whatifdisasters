@@ -9,7 +9,7 @@
   "themePickedBy": "--theme",
   "themesDir": "game-themes",
   "themesCommit": "6ce2b8635b4fead924de84dc23425ce7639eb98a",
-  "syncNote": "2026-11-07 同步 e057287（法律页日期固定为 legalUpdated）",
+  "syncNote": "2026-11-07 同步 e057287（法律页日期固定为 legalUpdated）；2026-11-17 同步 5840e8f 683c582（首页 GEO：Organization + WebSite dateModified + VideoGame + FAQPage 一个 @graph，可见 FAQ 来自站点数据；WebSite 从 layout 挪到首页）",
   "skippedFixes": [
     {
       "commit": "0d00b88",

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
-import { WebsiteJsonLd } from "@/components/json-ld";
 import { AnalyticsConsent } from "@/components/analytics-consent";
 import { AdsterraSocialBar } from "@/components/adsterra-social-bar";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
@@ -26,7 +25,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en">
       <body className="flex min-h-screen flex-col">
-        <WebsiteJsonLd />
         <SiteNav />
         <main className="flex-1">{children}</main>
         <SiteFooter />

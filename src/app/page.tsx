@@ -5,6 +5,8 @@ import { AdsterraBanner } from "@/components/adsterra-banner";
 import { RECTANGLE } from "@/lib/ads";
 import { ENTITY, GAME, entityHref } from "@/lib/site";
 import { HERO_SHOT } from "@/lib/media";
+import { HomeJsonLd } from "@/components/json-ld";
+import { homeFaq } from "@/lib/home-faq";
 
 // The homepage owns the brand and "<game> wiki" queries; /codes/ owns "<game> codes". 2026-10-13 SERP study
 // (Ship/research/GAME-WIKI-STRUCTURE-2026-10.md): every small-game hub ranking top 5 for "<game> wiki" opens its title and
@@ -18,8 +20,11 @@ export const metadata: Metadata = {
 export default function HomePage() {
   const withImages = entities.filter((e) => e.image).slice(0, 12);
 
+  const faq = homeFaq();
+
   return (
     <>
+      <HomeJsonLd faq={faq} />
       <section className="relative isolate overflow-x-clip">
         <div className="hero-glow" aria-hidden="true">
           <span />
@@ -171,6 +176,20 @@ export default function HomePage() {
       </section>
 
       <AdsterraBanner slot={RECTANGLE} className="mt-16" />
+
+      {/* Short FAQ built from the site data (src/lib/home-faq.ts), the same list as the FAQPage JSON-LD above.
+          Below the ad on purpose: the rectangle stays where it was (2026-11-17, GEO, game-template-next 5840e8f). */}
+      <section className="container-page mt-16">
+        <h2 className="text-2xl">{GAME.name} questions</h2>
+        <dl className="mt-5 grid gap-4">
+          {faq.map((f) => (
+            <div key={f.q} className="tile p-5">
+              <dt className="font-semibold">{f.q}</dt>
+              <dd className="mt-2 text-sm text-ink-soft">{f.a}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
     </>
   );
 }
