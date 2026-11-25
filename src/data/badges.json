@@ -1,110 +1,131 @@
 {
-  "checkedAt": "2026-11-01",
+  "checkedAt": "2026-11-25",
   "badges": [
     {
       "id": 3727408897489372,
       "name": "Survived 1 Disaster",
       "description": "Survive your first disaster in What If Disasters.",
-      "awarded": 5164269,
+      "awarded": 8001750,
       "created": "2026-10-13"
     },
     {
       "id": 1855193351479697,
       "name": "Survived 10 Disasters",
       "description": "Survive 10 disasters in What If Disasters.",
-      "awarded": 1138679,
+      "awarded": 1871816,
       "created": "2026-10-13"
     },
     {
       "id": 4292127694632950,
       "name": "Survived 50 Disasters",
       "description": "Survive 50 disasters in What If Disasters.",
-      "awarded": 91276,
+      "awarded": 191890,
       "created": "2026-10-13"
     },
     {
       "id": 3559057550366816,
       "name": "Survived 100 Disasters",
       "description": "Survive 100 disasters in What If Disasters.",
-      "awarded": 20936,
+      "awarded": 56447,
       "created": "2026-10-13"
     },
     {
       "id": 1005806957045356,
       "name": "Survived 500 Disasters",
       "description": "Survive 500 disasters in What If Disasters.",
-      "awarded": 390,
+      "awarded": 2507,
       "created": "2026-10-13"
     },
     {
       "id": 2670933046436298,
       "name": "Survived 1,000 Disasters",
       "description": "Survive 1,000 disasters in What If Disasters.",
-      "awarded": 67,
+      "awarded": 555,
       "created": "2026-10-13"
     },
     {
       "id": 2295253907166726,
       "name": "Statue",
       "description": "A secret achievement. Some survive by doing nothing at all.",
-      "awarded": 141159,
+      "awarded": 281508,
       "created": "2026-10-13"
     },
     {
       "id": 3581161837093277,
       "name": "First To Go",
       "description": "A secret achievement. Somebody has to be first.",
-      "awarded": 1368237,
+      "awarded": 2924726,
       "created": "2026-10-13"
     },
     {
       "id": 2847995054165663,
       "name": "Crow's Nest",
       "description": "A secret achievement. The best view in the city isn't on a rooftop.",
-      "awarded": 2773,
+      "awarded": 4729,
       "created": "2026-10-13"
     },
     {
       "id": 3617481991876350,
       "name": "Lightkeeper",
       "description": "A secret achievement. Higher than the light itself.",
-      "awarded": 84026,
+      "awarded": 131734,
       "created": "2026-10-13"
     },
     {
       "id": 3210333628915618,
       "name": "Tank Top",
       "description": "A secret achievement. The town's water has a lid.",
-      "awarded": 82218,
+      "awarded": 129619,
       "created": "2026-10-13"
     },
     {
       "id": 1848961674720632,
       "name": "Into The Abyss",
       "description": "A secret achievement. Everyone looks up. Try looking down.",
-      "awarded": 161626,
+      "awarded": 235063,
       "created": "2026-10-13"
     },
     {
       "id": 3287211508297344,
       "name": "Sisyphus",
       "description": "A secret achievement. What rolls down can be rolled back up.",
-      "awarded": 98718,
+      "awarded": 161501,
       "created": "2026-10-13"
     },
     {
       "id": 2419859239092997,
       "name": "Chosen One",
       "description": "A secret achievement. Nobody knows how. It just happens.",
-      "awarded": 40600,
+      "awarded": 70903,
       "created": "2026-10-13"
     },
     {
       "id": 1575125081756144,
       "name": "Castaway",
       "description": "A secret achievement. There's land on the horizon.",
-      "awarded": 685744,
+      "awarded": 1042877,
       "created": "2026-10-13"
+    },
+    {
+      "id": 2191887873507120,
+      "name": "Survived 250 Disasters",
+      "description": "Survive 250 disasters in What If Disasters.",
+      "awarded": 10183,
+      "created": "2026-11-03"
+    },
+    {
+      "id": 1346895053739685,
+      "name": "Survived 2,500 Disasters",
+      "description": "Survive 2,500 disasters in What If Disasters.",
+      "awarded": 66,
+      "created": "2026-11-03"
+    },
+    {
+      "id": 3314024554081131,
+      "name": "Survived 5,000 Disasters",
+      "description": "Survive 5,000 disasters in What If Disasters.",
+      "awarded": 12,
+      "created": "2026-11-03"
     }
   ]
 }

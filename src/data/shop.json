@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-01",
+  "checkedAt": "2026-11-25",
   "universeId": 10769484703,
   "gamePasses": [
     {
@@ -265,6 +265,55 @@
       "price": 449,
       "description": "10 extra rewards, +50% corn and better Golden Chick odds.",
       "added": "2026-10-31"
+    },
+    {
+      "id": 3728032065,
+      "name": "Gift: 200 Corn",
+      "price": 39,
+      "description": "A gift for another player: a sack of 200 corn for their turkey.",
+      "added": "2026-11-03"
+    },
+    {
+      "id": 3728032075,
+      "name": "Gift: 550 Corn",
+      "price": 99,
+      "description": "A gift for another player: a basket of 550 corn for their turkey.",
+      "added": "2026-11-03"
+    },
+    {
+      "id": 3728032083,
+      "name": "Gift: 1,500 Corn",
+      "price": 249,
+      "description": "A gift for another player: a barrel of 1,500 corn for their turkey.",
+      "added": "2026-11-03"
+    },
+    {
+      "id": 3728032092,
+      "name": "Gift: 3,200 Corn",
+      "price": 499,
+      "description": "A gift for another player: a cart of 3,200 corn for their turkey.",
+      "added": "2026-11-03"
+    },
+    {
+      "id": 3728032101,
+      "name": "Gift: 6,800 Corn",
+      "price": 999,
+      "description": "A gift for another player: a whole harvest of 6,800 corn for their turkey.",
+      "added": "2026-11-03"
+    },
+    {
+      "id": 3728032106,
+      "name": "Gift: Harvest Pass",
+      "price": 449,
+      "description": "A gift for another player: the Harvest Pass.",
+      "added": "2026-11-03"
+    },
+    {
+      "id": 3728032117,
+      "name": "Gift: Harvest Membership",
+      "price": 99,
+      "description": "A gift for another player: the Harvest Membership until the event ends.",
+      "added": "2026-11-03"
     }
   ]
 }
